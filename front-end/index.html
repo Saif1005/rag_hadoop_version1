@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface RAG avec Ollama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #chat-container {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        #user-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        .user-message {
+            background-color: #e3f2fd;
+            text-align: right;
+        }
+        .bot-message {
+            background-color: #f1f1f1;
+        }
+        .sources {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat avec RAG et Ollama</h1>
+    <div id="chat-container"></div>
+    <input type="text" id="user-input" placeholder="Posez votre question...">
+    <button onclick="sendMessage()">Envoyer</button>
+
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const userInput = document.getElementById('user-input');
+
+        // Afficher un message dans le chat
+        function addMessage(role, content) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}-message`;
+            messageDiv.innerHTML = content;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Envoyer une question au serveur
+        async function sendMessage() {
+            const query = userInput.value.trim();
+            if (!query) return;
+
+            addMessage('user', query);
+            userInput.value = '';
+
+            try {
+                const response = await fetch('http://localhost:8000/chat_stream', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'text/event-stream'
+                    },
+                    body: JSON.stringify({
+                        goal_id: "saifsaif1005",
+                        query: query,
+                        messages: [{ role: "user", content: query }]
+                    })
+                });
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let buffer = "";
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    buffer += decoder.decode(value);
+                    const lines = buffer.split('\n');
+                    buffer = lines.pop();
+
+                    for (const line of lines) {
+                        if (line.startsWith('data:')) {
+                            const data = JSON.parse(line.substring(5).trim());
+                            
+                            if (data.type === 'error') {
+                                addMessage('bot', `<span style="color:red">${data.content}</span>`);
+                                return;
+                            }
+                            if (data.type === 'sources') {
+                                let sourcesHtml = '<div class="sources"><strong>Sources :</strong><ul>';
+                                data.sources.forEach(source => {
+                                    sourcesHtml += `<li>${source.content.substring(0, 100)}...</li>`;
+                                });
+                                sourcesHtml += '</ul></div>';
+                                addMessage('bot', sourcesHtml);
+                            } 
+                            else if (data.type === 'content') {
+                                addMessage('bot', data.content);
+                            }
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error("Erreur:", error);
+                addMessage('bot', `Erreur : ${error.message}`);
+            }
+        }
+
+        // Permettre d'envoyer avec la touche Entrée
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

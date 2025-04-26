@@ -1,0 +1,1946 @@
+{
+  "0": {
+    "content": "{   \"0\": \"HAL Id: hal-03849387\\nhttps://hal.science/hal-03849387v1\\nSubmitted on 13 Dec 2022\\nHAL is a multi-disciplinary open access\\narchive for the deposit and dissemination of sci-\\nentific research documents, whether they are pub-\\nlished or not. The documents may come from\\nteaching and research institutions in F rance or\\nabroad, or from public or private research centers.\",   \"1\": \"L\u2019archive ouverte pluridisciplinaire HAL , est\\ndestin\u00e9e au d\u00e9p\u00f4t et \u00e0 la diffusion de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_1",
+      "length": 479
+    }
+  },
+  "1": {
+    "content": "documents\\nscientifiques de niveau recherche, publi\u00e9s ou non,\\n\u00e9manant des \u00e9tablissements d\u2019enseignement et de\\nrecherche fran\u00e7ais ou \u00e9trangers, des laboratoires\\npublics ou priv\u00e9s. Introduction \u00e0 l\u2019intelligence artificielle et aux mod\u00e8les\\ng\u00e9n\u00e9ratifs\\nPierre-Alexandre Mattei, Serena Villata\\nT o cite this version: Pierre-Alexandre Mattei, Serena Villata.\",   \"2\": \"Introduction \u00e0 l\u2019intelligence artificielle et aux mod\u00e8les\\ng\u00e9n\u00e9ratifs. Bruno Martin; Sara Riva. Informatique Math\u00e9matique: Une",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_2",
+      "length": 494
+    }
+  },
+  "2": {
+    "content": "photographie en 2022, CNRS\\nEditions, 2022. \uffffhal-03849387\uffffChapitre 1\\nIntroduction \u00e0 l\u2019intelligence\\narti\ufb01cielle et aux mod\u00e8les\\ng\u00e9n\u00e9ratifs\\nPierre-Alexandre Mattei, Serena Villata Universit\u00e9\",   \"3\": \"C\u00f4te d\u2019Azur, Inria\\nL\u2019intelligence arti\ufb01cielle est un champ polymorphe, caract\u00e9ris\u00e9 par son\\ninterdisciplinarit\u00e9 et sa situation particuli\u00e8re, au carrefour de plusieurs\\nbranches des math\u00e9matiques et de l\u2019informatique. On offrira ici un panorama\\ndes diff\u00e9rentes familles d\u2019intelligence",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_3",
+      "length": 488
+    }
+  },
+  "3": {
+    "content": "arti\ufb01cielle, ainsi que leur articulation\\nhistorique. Puis, nous traiterons un exemple d\u2019approche r\u00e9cente en d\u00e9tail :\\ncelui des mod\u00e8les statistiques g\u00e9n\u00e9ratifs.\\n1.1 Introduction\",   \"4\": \"Le terme \\\"intelligence arti\ufb01cielle\\\" (ci-apr\u00e8s \\\"IA\\\") a \u00e9t\u00e9 invent\u00e9 par\\nJohn McCarthy en 1956, \u00e0 l\u2019occasion d\u2019un s\u00e9minaire de deux mois (qu\u2019il a\\norganis\u00e9 au Dartmouth College \u00e0 Hanover, New Hampshire, \u00c9tats-Unis)\\nqui a eu le m\u00e9rite de faire se rencontrer dix chercheurs am\u00e9ricains (sur\\nla th\u00e9orie des",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_4",
+      "length": 496
+    }
+  },
+  "4": {
+    "content": "automates, les r\u00e9seaux de neurones et l\u2019intelligence) et de\\ndonner l\u2019imprimatur au terme \\\"intelligence arti\ufb01cielle\\\" comme nom of\ufb01ciel\\nd\u2019un nouveau domaine de recherche.\",   \"5\": \"Depuis lors, l\u2019IA s\u2019est \u00e9tablie et a \u00e9volu\u00e9; aujourd\u2019hui, elle est recon-\\nnue comme une branche autonome, bien qu\u2019elle soit li\u00e9e \u00e0 l\u2019informatique,\\naux math\u00e9matiques, aux sciences cognitives, \u00e0 la neurobiologie et \u00e0 la\\nphilosophie.iv Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs De nombreuses d\u00e9\ufb01nitions ont \u00e9t\u00e9 donn\u00e9es \u00e0",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_5",
+      "length": 498
+    }
+  },
+  "5": {
+    "content": "ce sujet : elles diff\u00e8rent\\npar les t\u00e2ches effectu\u00e9es par les machines que l\u2019IA cherche \u00e0 construire.\",   \"6\": \"Ces t\u00e2ches peuvent \u00eatre class\u00e9es selon deux dimensions orthogonales [ 20]:\\nles machines qui pensent ou agissent, et les machines qui simulent les\\nhumains (ou se comportent de mani\u00e8re rationnelle). Quatre classes au total,\\nselon que les machines : pensent comme des humains, agissent comme des\\nhumains, pensent rationnellement, agissent rationnellement.\",   \"7\": \"Quatre ap-\\nproches",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_6",
+      "length": 498
+    }
+  },
+  "6": {
+    "content": "distinctes de la recherche sur l\u2019IA, donc, qui sont toutes activement\\npoursuivies.\\nL\u2019objectif de l\u2019approche \\\"les machines pensent comme les humains\\\"\\nest de reproduire le raisonnement humain dans les machines. Elle peut se\\nfaire \u00e0 deux niveaux : en imitant les m\u00e9thodes de raisonnement ou en re-\\nproduisant le fonctionnement du cerveau.\",   \"8\": \"Dans le premier cas, les sciences\\ncognitives nous fournissent un point de d\u00e9part important, obtenu par l\u2019in-\\ntrospection et les exp\u00e9riences",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_7",
+      "length": 494
+    }
+  },
+  "7": {
+    "content": "psychologiques. Dans le second cas, c\u2019est la\\nneurobiologie qui nous fournit un mod\u00e8le appropri\u00e9. Ce premier crit\u00e8re\\nvise donc \u00e0 produire des automates qui, non seulement se comportent\\ncomme des humains, mais aussi \\\"fonctionnent\\npar les t\u00e2ches effectu\u00e9es par les machines que l\u2019IA cherche \u00e0 construire.\",   \"9\": \"Ces t\u00e2ches peuvent \u00eatre class\u00e9es selon deux dimensions orthogonales [ 20]:\\nles machines qui pensent ou agissent, et les machines qui simulent les\\nhumains (ou se comportent de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_8",
+      "length": 493
+    }
+  },
+  "8": {
+    "content": "mani\u00e8re rationnelle). Quatre classes au total,\\nselon que les machines : pensent comme des humains, agissent comme des\\nhumains, pensent rationnellement, agissent rationnellement.\",   \"10\": \"Quatre ap-\\nproches distinctes de la recherche sur l\u2019IA, donc, qui sont toutes activement\\npoursuivies.\\nL\u2019objectif de l\u2019approche \\\"les machines pensent comme les humains\\\"\\nest de reproduire le raisonnement humain dans les machines. Elle peut se\\nfaire \u00e0 deux niveaux : en imitant les m\u00e9thodes de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_9",
+      "length": 488
+    }
+  },
+  "9": {
+    "content": "raisonnement ou en re-\\nproduisant le fonctionnement du cerveau.\",   \"11\": \"Dans le premier cas, les sciences\\ncognitives nous fournissent un point de d\u00e9part important, obtenu par l\u2019in-\\ntrospection et les exp\u00e9riences psychologiques. Dans le second cas, c\u2019est la\\nneurobiologie qui nous fournit un mod\u00e8le appropri\u00e9.\",   \"12\": \"Ce premier crit\u00e8re\\nvise donc \u00e0 produire des automates qui, non seulement se comportent\\ncomme des humains, mais aussi \\\"fonctionnent\\\" comme des humains.\\nL\u2019objectif de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_10",
+      "length": 496
+    }
+  },
+  "10": {
+    "content": "l\u2019approche des \\\"machines qui se comportent comme des\\nhumains\\\" est de produire des machines qu\u2019il est impossible de distinguer\\ndes humains.\",   \"13\": \"Cette propri\u00e9t\u00e9 a \u00e9t\u00e9 mieux d\u00e9\ufb01nie par Alan Turing qui, dans\\nun article de 1950 [ 26], a propos\u00e9 le test qui porte son nom : un \\\"juge\\\" est\\nautoris\u00e9 \u00e0 poser des questions \u00e9crites \u00e0 un \\\"sujet\\\" et, sur la base des r\u00e9ponses,\\ndoit d\u00e9cider s\u2019il s\u2019agit d\u2019un humain ou d\u2019une machine.\",   \"14\": \"Pour r\u00e9ussir le test\\nde Turing, une machine doit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_11",
+      "length": 497
+    }
+  },
+  "11": {
+    "content": "pr\u00e9senter les capacit\u00e9s suivantes :\\n\u2014le traitement du langage naturel, a\ufb01n de communiquer ef\ufb01cace-\\nment dans la langue du juge;\\n\u2014la repr\u00e9sentation des connaissances, a\ufb01n de m\u00e9moriser ce que l\u2019on\\nsait ou ce que l\u2019on importe;\\n\u2014le raisonnement automatique, pour d\u00e9duire (produire), \u00e0 partir de\\nses propres connaissances, les r\u00e9ponses au juge;\\n\u2014l\u2019apprentissage automatique, pour augmenter sa base de connais-\\nsances.\",   \"15\": \"Le test de Turing n\u2019implique pas d\u2019interaction physique entre le",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_12",
+      "length": 496
+    }
+  },
+  "12": {
+    "content": "juge\\net la machine, car cela n\u2019est pas n\u00e9cessaire. Si l\u2019on veut, on peut penser\\n\u00e0 un test de Turing total dans lequel, au lieu de r\u00e9ponses \u00e9crites, le juge\\nre\u00e7oit un signal audio-vid\u00e9o, et a la possibilit\u00e9 de faire passer des objets \u00e0 la\\nmachine par une fente. Dans ce cas, la machine doit \u00e9galement pr\u00e9senter les\\ncapacit\u00e9s suivantes : la vision arti\ufb01cielle, pour reconna\u00eetre les objets re\u00e7us; la\\nrobotique, pour les manipuler;\",   \"16\": \"le traitement de la parole, pour comprendre\\nles",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_13",
+      "length": 493
+    }
+  },
+  "13": {
+    "content": "questions du juge et y r\u00e9pondre. Le test de Turing total rappelle le test1.1. Introduction v\\nVoight-Kampf du \ufb01lm Blade Runner, gr\u00e2ce auquel les policiers distinguent\\nles andro\u00efdes des humains. L\u2019approche de la \\\"machines pensant rationnellement\\\" ne s\u2019int\u00e9resse\\npas aux machines qui fonctionnent comme des humains, mais uniquement\\nau raisonnement rationnel, le terme \\\"rationnel\\\"\",   \"17\": \"\u00e9tant pr\u00e9cis\u00e9ment d\u00e9\ufb01ni par\\nles math\u00e9matiques, y compris les techniques que les humains",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_14",
+      "length": 484
+    }
+  },
+  "14": {
+    "content": "n\u2019utilisent\\npas naturellement. La logique, par exemple, est l\u2019\u00e9tude de la mani\u00e8re de\\nmener un raisonnement imparable. La logique joue un r\u00f4le important dans\\nl\u2019IA, m\u00eame si l\u2019on s\u2019attend initialement \u00e0 ce qu\u2019elle ne soit pas utilis\u00e9e par\\nles humains ou tr\u00e8s peu.\",   \"18\": \"De m\u00eame, la derni\u00e8re des quatre classes alternatives d\u2019IA se concentre\\nsur l\u2019approche \\\"machines agissant rationnellement\\\" qui utilise la d\u00e9\ufb01nition\\nde \\\"l\u2019action rationnelle\\\" fournie en \u00e9conomie, \u00e0 savoir : la s\u00e9lection",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_15",
+      "length": 499
+    }
+  },
+  "15": {
+    "content": "d\u2019ac-\\ntions menant au meilleur r\u00e9sult\\n; la\\nrobotique, pour les manipuler; le traitement de la parole, pour comprendre\\nles questions du juge et y r\u00e9pondre. Le test de Turing total rappelle le test1.1.\",   \"19\": \"Introduction v\\nVoight-Kampf du \ufb01lm Blade Runner, gr\u00e2ce auquel les policiers distinguent\\nles andro\u00efdes des humains. L\u2019approche de la \\\"machines pensant rationnellement\\\" ne s\u2019int\u00e9resse\\npas aux machines qui fonctionnent comme des humains, mais uniquement\\nau raisonnement rationnel,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_16",
+      "length": 498
+    }
+  },
+  "16": {
+    "content": "le terme \\\"rationnel\\\" \u00e9tant pr\u00e9cis\u00e9ment d\u00e9\ufb01ni par\\nles math\u00e9matiques, y compris les techniques que les humains n\u2019utilisent\\npas naturellement.\",   \"20\": \"La logique, par exemple, est l\u2019\u00e9tude de la mani\u00e8re de\\nmener un raisonnement imparable. La logique joue un r\u00f4le important dans\\nl\u2019IA, m\u00eame si l\u2019on s\u2019attend initialement \u00e0 ce qu\u2019elle ne soit pas utilis\u00e9e par\\nles humains ou tr\u00e8s peu.\",   \"21\": \"De m\u00eame, la derni\u00e8re des quatre classes alternatives d\u2019IA se concentre\\nsur l\u2019approche \\\"machines",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_17",
+      "length": 496
+    }
+  },
+  "17": {
+    "content": "agissant rationnellement\\\" qui utilise la d\u00e9\ufb01nition\\nde \\\"l\u2019action rationnelle\\\" fournie en \u00e9conomie, \u00e0 savoir : la s\u00e9lection d\u2019ac-\\ntions menant au meilleur r\u00e9sultat, ou au meilleur r\u00e9sultat attendu s\u2019il existe\\ndes \u00e9l\u00e9ments d\u2019impr\u00e9visibilit\u00e9. L\u2019objectif de cette approche est de cr\u00e9er un\\nagent, une entit\u00e9 capable d\u2019agir dans un environnement, a\ufb01n d\u2019atteindre\\nun ou plusieurs objectifs.\",   \"22\": \"L\u2019agent utilisera un raisonnement rationnel pour\\nchoisir les actions \u00e0 effectuer, mais dans",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_18",
+      "length": 494
+    }
+  },
+  "18": {
+    "content": "certains cas, il devra r\u00e9agir \u00e0 des\\nstimuli environnementaux si rapidement qu\u2019il \\\"outrepassera\\\" son choix\\n(par exemple, lorsqu\u2019une inaction menace son existence). Si l\u2019on touche\\nquelque chose de chaud, on r\u00e9agit en retirant imm\u00e9diatement la main,\\nsans raisonnement conscient; de m\u00eame, l\u2019agent, dans certaines situations,\\ndoit \u00eatre capable d\u2019agir sans raisonner.\",   \"23\": \"Les agents peuvent \u00eatre de deux\\ntypes : uniquement logiciels, auquel cas ils sont appel\u00e9s softbots , ou \u00e0 la",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_19",
+      "length": 489
+    }
+  },
+  "19": {
+    "content": "fois\\nmat\u00e9riels et logiciels, alors appel\u00e9s robots . Dans le cas des softbots, l\u2019envi-\\nronnement externe dans lequel ils op\u00e8rent est le Web, o\u00f9 ils interagissent\\navec des humains et d\u2019autres softbots. C\u2019est actuellement l\u2019approche la plus\\npoursuivie, car elle promet les r\u00e9sultats pratiques les plus utiles.\",   \"24\": \"A\ufb01n de pr\u00e9senter les diff\u00e9rentes techniques propos\u00e9es par l\u2019IA, nous\\nles diviserons en deux grandes classes : symbolique et subsymbolique. La\\npremi\u00e8re propose d\u2019automatiser le",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_20",
+      "length": 499
+    }
+  },
+  "20": {
+    "content": "raisonnement et l\u2019action, en repr\u00e9sentant\\nles situations objet de l\u2019analyse par des symboles compr\u00e9hensibles par l\u2019\u00eatre\\nhumain, et en les traitant par des algorithmes.\",   \"25\": \"La derni\u00e8re, en revanche,\\nne repr\u00e9sente pas explicitement les connaissances de mani\u00e8re directement\\ncompr\u00e9hensible, et est bas\u00e9es sur la reproduction de ph\u00e9nom\u00e8nes naturels\\n\u00e0 l\u2019aide de m\u00e9thodes statistiques. Nous d\u00e9taillerons ensuite un exemple de\\ncette approche statistique, \u00e0 travers l\u2019\u00e9tude de mod\u00e8les \u00e0 variables",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_21",
+      "length": 500
+    }
+  },
+  "21": {
+    "content": "latentes.\",   \"26\": \"Les techniques symboliques ont \u00e9t\u00e9 le paradigme dominant de l\u2019IA\\ndu milieu des ann\u00e9es 1950 \u00e0 la \ufb01n des ann\u00e9es 1980 et ont \u00e9t\u00e9 appel\u00e9es\\nGOFAI (\\\"Good Old-Fashioned Arti\ufb01cial Intelligence\\\") dans [ 5]. Les tech-\\nniques subsymboliques, et en particulier les r\u00e9seaux de neurones, ont prisvi Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\\nleur essor depuis les ann\u00e9es 1990 et ont remport\u00e9 d\u2019importants succ\u00e8s\\ndans divers domaines tels que la vision par ordinateur.\",   \"27\": \"R\u00e9cemment,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_22",
+      "length": 497
+    }
+  },
+  "22": {
+    "content": "la\\nrecherche s\u2019est orient\u00e9e vers la combinaison de techniques symboliques et\\nsubsymboliques.\\n1.2 IA symbolique\\nParmi les techniques symboliques, nous d\u00e9crirons la recherche dans\\nl\u2019espace des \u00e9tats, le raisonnement automatique et l\u2019apprentissage automa-\\ntique.\\n1.2.1 Recherche dans l\u2019espace des\\n en revanche ,\\nne repr\u00e9sente pas explicitement les connaissances de mani\u00e8re directement\\ncompr\u00e9hensible, et est bas\u00e9es sur la reproduction de ph\u00e9nom\u00e8nes naturels\\n\u00e0 l\u2019aide de m\u00e9thodes",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_23",
+      "length": 486
+    }
+  },
+  "23": {
+    "content": "statistiques.\",   \"28\": \"Nous d\u00e9taillerons ensuite un exemple de\\ncette approche statistique, \u00e0 travers l\u2019\u00e9tude de mod\u00e8les \u00e0 variables latentes. Les techniques symboliques ont \u00e9t\u00e9 le paradigme dominant de l\u2019IA\\ndu milieu des ann\u00e9es 1950 \u00e0 la \ufb01n des ann\u00e9es 1980 et ont \u00e9t\u00e9 appel\u00e9es\\nGOFAI (\\\"Good Old-Fashioned Arti\ufb01cial Intelligence\\\") dans [ 5]. Les tech-\\nniques subsymboliques, et en particulier les r\u00e9seaux de neurones, ont prisvi Chapitre 1.\",   \"29\": \"IA et mod\u00e8les g\u00e9n\u00e9ratifs\\nleur essor",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_24",
+      "length": 494
+    }
+  },
+  "24": {
+    "content": "depuis les ann\u00e9es 1990 et ont remport\u00e9 d\u2019importants succ\u00e8s\\ndans divers domaines tels que la vision par ordinateur. R\u00e9cemment, la\\nrecherche s\u2019est orient\u00e9e vers la combinaison de techniques symboliques et\\nsubsymboliques.\\n1.2 IA symbolique\\nParmi les techniques symboliques, nous d\u00e9crirons la recherche dans\\nl\u2019espace des \u00e9tats, le raisonnement automatique et l\u2019apprentissage automa-\\ntique.\\n1.2.1 Recherche dans l\u2019espace des \u00e9tats\",   \"30\": \"Cette technique est utilis\u00e9e lorsque l\u2019on veut choisir",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_25",
+      "length": 499
+    }
+  },
+  "25": {
+    "content": "une s\u00e9rie d\u2019actions\\nmenant d\u2019un \u00e9tat initial \u00e0 un ou plusieurs \u00e9tats \ufb01naux souhait\u00e9s. Les condi-\\ntions, pour qu\u2019elle soit utilis\u00e9e, sont que l\u2019\u00e9tat du monde ext\u00e9rieur puisse\\n\u00eatre repr\u00e9sent\u00e9 de mani\u00e8re concise (sous forme symbolique), que les actions\\ndisponibles puissent \u00eatre exprim\u00e9es sous forme de r\u00e8gles de passage d\u2019un\\n\u00e9tat \u00e0 l\u2019autre, et qu\u2019il existe un test pour \u00e9tablir si un \u00e9tat est \ufb01nal.\",   \"31\": \"Examinons un exemple de probl\u00e8me qui peut \u00eatre trait\u00e9 de cette ma-\\nni\u00e8re. Dans le jeu",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_26",
+      "length": 499
+    }
+  },
+  "26": {
+    "content": "de huit (ou puzzle de huit), nous avons un \u00e9chiquier de\\ntrois cases sur trois, dans lequel huit cases sont occup\u00e9es par huit tuiles nu-\\nm\u00e9rot\u00e9es de 1 \u00e0 8 et une case est vide. Les mouvements possibles consistent\\n\u00e0 d\u00e9placer une tuile num\u00e9rot\u00e9e adjacente vers la tuile vide. Pour ce pro-\\nbl\u00e8me, \\\"l\u2019\u00e9tat\\\" consiste en la position des huit tuiles num\u00e9rot\u00e9es.\",   \"32\": \"Le but est\\nde trier les tuiles de 1 \u00e0 8, en essayant de faire le moins de d\u00e9placements\\npossible.\\nC\u2019est un probl\u00e8me qui semble",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_27",
+      "length": 499
+    }
+  },
+  "27": {
+    "content": "exiger de l\u2019intelligence : un \u00eatre humain\\nle r\u00e9soudrait en essayant diff\u00e9rents mouvements et en tentant de pr\u00e9dire le\\nr\u00e9sultat. La m\u00e9thode de r\u00e9solution propos\u00e9e par l\u2019IA consiste \u00e0 effectuer une\\nrecherche dans l\u2019espace des \u00e9tats possibles.\",   \"33\": \"\u00c0 cette \ufb01n, on peut repr\u00e9senter\\n\\\"l\u2019espace\\\" comme un arbre dans lequel chaque n\u0153ud correspond \u00e0 un \\\"\u00e9tat\\\".\\nLa racine de l\u2019arbre est l\u2019\u00e9tat initial, les enfants d\u2019un n\u0153ud sont les \u00e9tats qui\\npeuvent \u00eatre atteints \u00e0 partir de l\u2019\u00e9tat associ\u00e9",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_28",
+      "length": 498
+    }
+  },
+  "28": {
+    "content": "au n\u0153ud en appliquant un\\nseul d\u00e9placement. Le probl\u00e8me est r\u00e9solu lorsqu\u2019un chemin de l\u2019\u00e9tat initial \u00e0 un \u00e9tat\\n\ufb01nal a \u00e9t\u00e9 trouv\u00e9. En g\u00e9n\u00e9ral, il ne suf\ufb01t pas de trouver une solution, mais\\ncelle qui a le co\u00fbt minimum.\",   \"34\": \"Il est donc n\u00e9cessaire de d\u00e9\ufb01nir un \\\"co\u00fbt\\\" :\\nnormalement, un co\u00fbt est attribu\u00e9 aux diff\u00e9rents coups, et le co\u00fbt d\u2019un\\nchemin est mesur\u00e9 comme la somme des co\u00fbts des coups qui le composent.1.2. IA symbolique vii\\nDans le cas du jeu de huit, chaque coup co\u00fbte 1, et on",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_29",
+      "length": 500
+    }
+  },
+  "29": {
+    "content": "cherche la solution\\nn\u00e9cessitant le nombre minimal de coups. Un autre probl\u00e8me similaire est le suivant.\",   \"35\": \"Le probl\u00e8me \\\"missionnaires\\net cannibales\\\" consiste \u00e0 faire traverser une rivi\u00e8re \u00e0 3 missionnaires et 3\\ncannibales, en utilisant un bateau et en emp\u00eachant les cannibales de manger\\nles missionnaires (lorsqu\u2019ils sont plus nombreux sur les deux rives). Le\\nbateau ne peut contenir que deux personnes \u00e0 la\\n\u2019arbre est l\u2019\u00e9tat initial, les enfants d\u2019un n\u0153ud sont les \u00e9tats qui\\npeuvent",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_30",
+      "length": 500
+    }
+  },
+  "30": {
+    "content": "\u00eatre atteints \u00e0 partir de l\u2019\u00e9tat associ\u00e9 au n\u0153ud en appliquant un\\nseul d\u00e9placement.\",   \"36\": \"Le probl\u00e8me est r\u00e9solu lorsqu\u2019un chemin de l\u2019\u00e9tat initial \u00e0 un \u00e9tat\\n\ufb01nal a \u00e9t\u00e9 trouv\u00e9. En g\u00e9n\u00e9ral, il ne suf\ufb01t pas de trouver une solution, mais\\ncelle qui a le co\u00fbt minimum. Il est donc n\u00e9cessaire de d\u00e9\ufb01nir un \\\"co\u00fbt\\\" :\\nnormalement, un co\u00fbt est attribu\u00e9 aux diff\u00e9rents coups, et le co\u00fbt d\u2019un\\nchemin est mesur\u00e9 comme la somme des co\u00fbts des coups qui le composent.1.2. IA symbolique vii\\nDans le cas",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_31",
+      "length": 498
+    }
+  },
+  "31": {
+    "content": "du jeu de huit, chaque coup co\u00fbte 1, et on cherche la solution\\nn\u00e9cessitant le nombre minimal de coups.\",   \"37\": \"Un autre probl\u00e8me similaire est le suivant. Le probl\u00e8me \\\"missionnaires\\net cannibales\\\" consiste \u00e0 faire traverser une rivi\u00e8re \u00e0 3 missionnaires et 3\\ncannibales, en utilisant un bateau et en emp\u00eachant les cannibales de manger\\nles missionnaires (lorsqu\u2019ils sont plus nombreux sur les deux rives). Le\\nbateau ne peut contenir que deux personnes \u00e0 la fois et doit \u00eatre dirig\u00e9 par\\nau",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_32",
+      "length": 498
+    }
+  },
+  "32": {
+    "content": "moins une personne pour se d\u00e9placer d\u2019un c\u00f4t\u00e9 \u00e0 l\u2019autre de la rivi\u00e8re.\",   \"38\": \"L\u2019\u00e9tat de ce probl\u00e8me peut \u00eatre repr\u00e9sent\u00e9 \u00e0 l\u2019aide d\u2019un triplet de nombres,\\ndans lequel les deux premiers quanti\ufb01ent les missionnaires et les cannibales\\nsur la banque initiale, et le troisi\u00e8me est \u00e9gal \u00e0 1 si le bateau est sur la rive\\ninitiale, et 0 s\u2019il est sur l\u2019autre rive. L\u2019\u00e9tat initial est (3,3,1), l\u2019\u00e9tat \ufb01nal est\\n(0,0,0) et un \u00e9tat possible (2,2,1) indique qu\u2019il y a deux missionnaires et deux\\ncannibales",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_33",
+      "length": 500
+    }
+  },
+  "33": {
+    "content": "sur la rive initiale et que le bateau est sur la rive initiale.\",   \"39\": \"Cinq\\nop\u00e9rations sont possibles : traverser la rivi\u00e8re avec deux missionnaires,\\navec deux cannibales, avec un missionnaire et un cannibale, avec un seul\\ncannibale ou avec un seul missionnaire.\",   \"40\": \"Toutes les op\u00e9rations ne sont pas\\nautoris\u00e9es dans tous les \u00e9tats : par exemple, \u00e0 partir de l\u2019\u00e9tat (2,2,1), il\\nn\u2019est pas possible d\u2019appliquer l\u2019op\u00e9ration \\\"traverser la rivi\u00e8re avec un\\nmissionnaire\\\" car sur la rive",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_34",
+      "length": 499
+    }
+  },
+  "34": {
+    "content": "initiale il resterait un missionnaire et deux\\ncannibales, et alors les cannibales mangeraient le missionnaire. Le co\u00fbt,\\ndans ce cas, est unitaire pour toutes les op\u00e9rations, on cherche donc des\\nsolutions avec le minimum de travers\u00e9es de rivi\u00e8re.\",   \"41\": \"Passons \u00e0 des probl\u00e8mes r\u00e9els, comme le \\\"calcul d\u2019itin\u00e9raire\\\", qui\\nconsiste \u00e0 aller d\u2019un endroit \u00e0 un autre au co\u00fbt minimum, en passant par\\ndes endroits interm\u00e9diaires, avec un co\u00fbt associ\u00e9 \u00e0 chaque lien. Un exemple\\nest le voyage en",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_35",
+      "length": 497
+    }
+  },
+  "35": {
+    "content": "voiture d\u2019une ville \u00e0 une autre : les liens sont les routes et\\nle co\u00fbt peut \u00eatre la distance ou le temps n\u00e9cessaire pour parcourir ce lien.\",   \"42\": \"Si vous voyagez en avion, les liens correspondent aux vols disponibles, et\\nle co\u00fbt peut correspondre \u00e0 la dur\u00e9e ou au prix du vol. Les \\\"\u00e9tats\\\" sont les\\nlieux, et les mouvements disponibles consistent \u00e0 utiliser l\u2019un des liens du\\nlieu actuel pour se d\u00e9placer vers un autre lieu.\\nComment r\u00e9soudre les probl\u00e8mes de recherche? L\u2019espace de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_36",
+      "length": 492
+    }
+  },
+  "36": {
+    "content": "recherche\\ndoit \u00eatre g\u00e9n\u00e9r\u00e9 et parcouru \u00e0 partir du n\u0153ud initial jusqu\u2019\u00e0 ce que l\u2019on\\ntrouve un \u00e9tat qui passe le test d\u2019\u00e9tat \ufb01nal par v\u00e9ri\ufb01cation;\",   \"43\": \"lorsque le test\\n\u00e9choue, le n\u0153ud doit \u00eatre \\\"\u00e9tendu\\\", ses successeurs g\u00e9n\u00e9r\u00e9s \u00e0 l\u2019aide de\\nd\u00e9placements ou d\u2019op\u00e9rateurs possibles, et examin\u00e9s jusqu\u2019\u00e0 ce que l\u2019un\\nd\u2019entre eux passe le test, ou jusqu\u2019\u00e0 ce que tout l\u2019espace des \u00e9tats soit\\nexplor\u00e9. L\u2019arbre de recherche est\\nroit \u00e0 un autre au co\u00fbt minimum, en passant par\\ndes endroits",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_37",
+      "length": 495
+    }
+  },
+  "37": {
+    "content": "interm\u00e9diaires, avec un co\u00fbt associ\u00e9 \u00e0 chaque lien.\",   \"44\": \"Un exemple\\nest le voyage en voiture d\u2019une ville \u00e0 une autre : les liens sont les routes et\\nle co\u00fbt peut \u00eatre la distance ou le temps n\u00e9cessaire pour parcourir ce lien. Si vous voyagez en avion, les liens correspondent aux vols disponibles, et\\nle co\u00fbt peut correspondre \u00e0 la dur\u00e9e ou au prix du vol. Les \\\"\u00e9tats\\\" sont les\\nlieux, et les mouvements disponibles consistent \u00e0 utiliser l\u2019un des liens du\\nlieu actuel pour se d\u00e9placer vers",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_38",
+      "length": 500
+    }
+  },
+  "38": {
+    "content": "un autre lieu.\\nComment r\u00e9soudre les probl\u00e8mes de recherche?\",   \"45\": \"L\u2019espace de recherche\\ndoit \u00eatre g\u00e9n\u00e9r\u00e9 et parcouru \u00e0 partir du n\u0153ud initial jusqu\u2019\u00e0 ce que l\u2019on\\ntrouve un \u00e9tat qui passe le test d\u2019\u00e9tat \ufb01nal par v\u00e9ri\ufb01cation; lorsque le test\\n\u00e9choue, le n\u0153ud doit \u00eatre \\\"\u00e9tendu\\\", ses successeurs g\u00e9n\u00e9r\u00e9s \u00e0 l\u2019aide de\\nd\u00e9placements ou d\u2019op\u00e9rateurs possibles, et examin\u00e9s jusqu\u2019\u00e0 ce que l\u2019un\\nd\u2019entre eux passe le test, ou jusqu\u2019\u00e0 ce que tout l\u2019espace des \u00e9tats soit\\nexplor\u00e9. L\u2019arbre de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_39",
+      "length": 491
+    }
+  },
+  "39": {
+    "content": "recherche est ainsi g\u00e9n\u00e9r\u00e9 progressivement.\",   \"46\": \"Les algorithmes de recherche dans l\u2019espace d\u2019\u00e9tat diff\u00e8rent par le choixviii Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\\ndu n\u0153ud \u00e0 d\u00e9velopper (strat\u00e9gie de recherche). Les deux strat\u00e9gies les plus\\ncourantes sont la recherche en profondeur et la recherche en largeur.\\nDans la recherche en profondeur, le n\u0153ud ayant la plus grande pro-\\nfondeur qui a \u00e9t\u00e9 g\u00e9n\u00e9r\u00e9 mais pas encore d\u00e9velopp\u00e9 est toujours d\u00e9velopp\u00e9.\",   \"47\": \"Cela signi\ufb01e que l\u2019on",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_40",
+      "length": 493
+    }
+  },
+  "40": {
+    "content": "proc\u00e8de d\u2019abord en profondeur jusqu\u2019\u00e0 ce que l\u2019on\\narrive \u00e0 un n\u0153ud qui ne peut plus \u00eatre d\u00e9velopp\u00e9 ou pour lequel on ne peut\\npas trouver de solution. Dans le premier cas, on part des n\u0153uds du niveau\\nde profondeur pr\u00e9c\u00e9dent et ainsi de suite. Dans la recherche en largeur,\\npar contre, les n\u0153uds de moindre profondeur qui ont \u00e9t\u00e9 g\u00e9n\u00e9r\u00e9s mais\\npas encore d\u00e9velopp\u00e9s sont toujours d\u00e9velopp\u00e9s.\",   \"48\": \"Dans ce cas, la racine\\nde l\u2019arbre est d\u00e9velopp\u00e9e en premier, puis tous ses enfants, puis tous",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_41",
+      "length": 499
+    }
+  },
+  "41": {
+    "content": "les\\nenfants des enfants et ainsi de suite.\\n1.2.2 Raisonnement automatique\\nLe raisonnement automatique est l\u2019utilisation de connaissances a\ufb01n\\nd\u2019en d\u00e9duire de nouvelles. \u00c0 cette \ufb01n, il est n\u00e9cessaire de repr\u00e9senter\\nles connaissances dans un format qui peut \u00eatre stock\u00e9 par un ordinateur\\net utilis\u00e9 pour faire des inf\u00e9rences.\",   \"49\": \"Ces exigences limitent le format de\\nrepr\u00e9sentation aux langages formels, c\u2019est-\u00e0-dire aux langages dont la\\nsyntaxe et la s\u00e9mantique sont pr\u00e9cis\u00e9ment",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_42",
+      "length": 490
+    }
+  },
+  "42": {
+    "content": "d\u00e9\ufb01nies.\\nL\u2019un des langages formels les plus \u00e9tudi\u00e9s est la logique. Elle trouve\\nson origine dans la philosophie et les math\u00e9matiques de la Gr\u00e8ce antique.\",   \"50\": \"Le p\u00e8re fondateur de la logique en tant que discipline autonome peut \u00eatre\\nconsid\u00e9r\u00e9 comme Aristote (vers 384-321 av. J.-C.), tandis que Chrysippe de\\nSoli (vers 280-205 av. J.-C.), de l\u2019\u00e9cole sto\u00efcienne, a d\u00e9\ufb01ni les connecteurs\\nlogiques, les axiomes et les r\u00e8gles fondamentales de la logique proposition-\\nnelle.\",   \"51\": \"La",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_43",
+      "length": 495
+    }
+  },
+  "43": {
+    "content": "naissance de la logique math\u00e9matique moderne remonte \u00e0 George\\nBoole (1815-1864), qui a publi\u00e9 en 1847 une m\u00e9thode permettant de d\u00e9crire\\nla th\u00e9orie des syllogismes aristot\u00e9liciens et de la logique propositionnelle\\nsous la forme d\u2019\u00e9quations alg\u00e9briques, et a propos\u00e9 une proc\u00e9dure m\u00e9ca-\\nnique pour leur r\u00e9solution.\",   \"52\": \"Gottlob Frege (1848-1925) a \u00e9t\u00e9 le premier \u00e0\\nd\u00e9velopper un syst\u00e8me d\u2019axiomes et de r\u00e8gles pour la logique du premier\\nordre, d\u00e9passant ainsi les limites impos\u00e9es par les",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_44",
+      "length": 498
+    }
+  },
+  "44": {
+    "content": "syllogismes et la logique\\npro\\n des langages formels les plus \u00e9tudi\u00e9s est la logique. Elle trouve\\nson origine dans la philosophie et les math\u00e9matiques de la Gr\u00e8ce antique.\",   \"53\": \"Le p\u00e8re fondateur de la logique en tant que discipline autonome peut \u00eatre\\nconsid\u00e9r\u00e9 comme Aristote (vers 384-321 av. J.-C.), tandis que Chrysippe de\\nSoli (vers 280-205 av. J.-C.), de l\u2019\u00e9cole sto\u00efcienne, a d\u00e9\ufb01ni les connecteurs\\nlogiques, les axiomes et les r\u00e8gles fondamentales de la logique",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_45",
+      "length": 478
+    }
+  },
+  "45": {
+    "content": "proposition-\\nnelle.\",   \"54\": \"La naissance de la logique math\u00e9matique moderne remonte \u00e0 George\\nBoole (1815-1864), qui a publi\u00e9 en 1847 une m\u00e9thode permettant de d\u00e9crire\\nla th\u00e9orie des syllogismes aristot\u00e9liciens et de la logique propositionnelle\\nsous la forme d\u2019\u00e9quations alg\u00e9briques, et a propos\u00e9 une proc\u00e9dure m\u00e9ca-\\nnique pour leur r\u00e9solution.\",   \"55\": \"Gottlob Frege (1848-1925) a \u00e9t\u00e9 le premier \u00e0\\nd\u00e9velopper un syst\u00e8me d\u2019axiomes et de r\u00e8gles pour la logique du premier\\nordre, d\u00e9passant",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_46",
+      "length": 498
+    }
+  },
+  "46": {
+    "content": "ainsi les limites impos\u00e9es par les syllogismes et la logique\\npropositionnelle. En 1965, John Robinson a publi\u00e9 la m\u00e9thode de r\u00e9solution, qui permet\\nune automatisation ef\ufb01cace de l\u2019inf\u00e9rence d\u00e9ductive en logique du premier\\nordre.\",   \"56\": \"La programmation logique s\u2019appuie sur cette m\u00e9thode, et notamment\\nsur le langage Prolog (PROgramming in LOGic), dont les bases ont \u00e9t\u00e9\\npos\u00e9es par des chercheurs des universit\u00e9s d\u2019\u00c9dimbourg et de Marseille au1.2. IA symbolique ix\\nd\u00e9but des ann\u00e9es 1970.\",",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_47",
+      "length": 499
+    }
+  },
+  "47": {
+    "content": "\"57\": \"En particulier, Robert Kowalski, \u00e0 \u00c9dimbourg, a\\ntravaill\u00e9 \u00e0 la d\u00e9\ufb01nition des fondements th\u00e9oriques de la programmation\\nlogique, et a propos\u00e9 une interpr\u00e9tation proc\u00e9durale des formules logiques\\nqui permet de r\u00e9duire le processus de preuve d\u2019un th\u00e9or\u00e8me \u00e0 un processus\\nde calcul sur un ordinateur traditionnel. Alain Colmerauer, \u00e0 Marseille, a\\n\u00e9t\u00e9 le premier \u00e0 cr\u00e9er un interpr\u00e8te pour le langage Prolog en 1972.\",   \"58\": \"En logique propositionnelle, les unit\u00e9s \u00e9l\u00e9mentaires sont des",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_48",
+      "length": 496
+    }
+  },
+  "48": {
+    "content": "proposi-\\ntions atomiques, c\u2019est-\u00e0-dire des \u00e9nonc\u00e9s qui ne peuvent \u00eatre d\u00e9compos\u00e9s\\ndavantage et qui peuvent \u00eatre vrais ou faux. Les propositions arbitraires ou\\nformules propositionnelles sont obtenues \u00e0 partir de formules atomiques\\nen les combinant \u00e0 l\u2019aide de connecteurs logiques : n\u00e9gation, conjonction,\\ndisjonction et implication. En logique du premier ordre , les formules atomiques se distinguent\\nde celles la logique propositionnelle\",   \"59\": \"car elles peuvent avoir un ou",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_49",
+      "length": 486
+    }
+  },
+  "49": {
+    "content": "plusieurs\\narguments. Les arguments sont des termes, c\u2019est-\u00e0-dire des repr\u00e9senta-\\ntions d\u2019un individu dans le domaine du discours. Dans les cas les plus\\nsimples, les termes sont variables s\u2019ils indiquent un individu non sp\u00e9ci\ufb01\u00e9,\\nou constants s\u2019ils d\u00e9terminent un individu sp\u00e9ci\ufb01que.\",   \"60\": \"Dans ce qui suit,\\nnous utiliserons la convention Prolog qui consiste \u00e0 utiliser des mots com-\\nmen\u00e7ant par des lettres minuscules pour d\u00e9signer les constantes, et des\\nmots commen\u00e7ant par des lettres",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_50",
+      "length": 497
+    }
+  },
+  "50": {
+    "content": "majuscules pour d\u00e9signer les variables. Les propositions deviennent des pr\u00e9dicats et expriment les propri\u00e9t\u00e9s de\\nleurs arguments.\",   \"61\": \"Par exemple, p(a)exprime le fait que \\\"l\u2019individu aestp\\\"\\nou \\\"l\u2019individu aa la propri\u00e9t\u00e9 p\\\" etq(a,b)exprime le fait que \\\"le couple\\nd\u2019individus aetbestq\\\" ou \\\"le couple aetba la propri\u00e9t\u00e9 q\\\", c\u2019est-\u00e0-dire que\\n\\\"aetbsont li\u00e9s par la relation q\\\".\",   \"62\": \"Des exemples de formules atomiques en\\nlogique propositionnelle sont man(socrates ), qui",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_51",
+      "length": 494
+    }
+  },
+  "51": {
+    "content": "signi\ufb01e que \\\"Socrate est\\nun homme\\\", et fa t h e r (paul ,peter ), qui indique que Paul et Pierre sont li\u00e9s\\npar la relation father , c\u2019est\\n-\\ntions d\u2019un individu dans le domaine du discours. Dans les cas les plus\\nsimples, les termes sont variables s\u2019ils indiquent un individu non sp\u00e9ci\ufb01\u00e9,\\nou constants s\u2019ils d\u00e9terminent un individu sp\u00e9ci\ufb01que.\",   \"63\": \"Dans ce qui suit,\\nnous utiliserons la convention Prolog qui consiste \u00e0 utiliser des mots com-\\nmen\u00e7ant par des lettres minuscules pour",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_52",
+      "length": 495
+    }
+  },
+  "52": {
+    "content": "d\u00e9signer les constantes, et des\\nmots commen\u00e7ant par des lettres majuscules pour d\u00e9signer les variables. Les propositions deviennent des pr\u00e9dicats et expriment les propri\u00e9t\u00e9s de\\nleurs arguments.\",   \"64\": \"Par exemple, p(a)exprime le fait que \\\"l\u2019individu aestp\\\"\\nou \\\"l\u2019individu aa la propri\u00e9t\u00e9 p\\\" etq(a,b)exprime le fait que \\\"le couple\\nd\u2019individus aetbestq\\\" ou \\\"le couple aetba la propri\u00e9t\u00e9 q\\\", c\u2019est-\u00e0-dire que\\n\\\"aetbsont li\u00e9s par la relation q\\\".\",   \"65\": \"Des exemples de formules",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_53",
+      "length": 495
+    }
+  },
+  "53": {
+    "content": "atomiques en\\nlogique propositionnelle sont man(socrates ), qui signi\ufb01e que \\\"Socrate est\\nun homme\\\", et fa t h e r (paul ,peter ), qui indique que Paul et Pierre sont li\u00e9s\\npar la relation father , c\u2019est-\u00e0-dire que Paul est le p\u00e8re de Pierre. Les formules\\natomiques en logique du premier ordre peuvent \u00eatre combin\u00e9es avec les\\nm\u00eames connecteurs logiques qu\u2019en logique propositionnelle. En outre, de\\nnouvelles formules peuvent \u00eatre obtenues en utilisant les quanti\ufb01cateurs\\n(9et8).\",   \"66\": \"Les",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_54",
+      "length": 499
+    }
+  },
+  "54": {
+    "content": "syst\u00e8mes experts ont \u00e9t\u00e9 d\u00e9velopp\u00e9s dans de nombreux domaines. Le premier et peut-\u00eatre le plus connu est Mycin, cr\u00e9\u00e9 dans les ann\u00e9es\\n1970 \u00e0 l\u2019universit\u00e9 de Stanford par Edward Shortliffe. Son objectif \u00e9tait\\nde diagnostiquer les maladies infectieuses du sang et de recommander\\ndes antibiotiques, dont la posologie \u00e9tait adapt\u00e9e au poids du patient. Le\\nsyst\u00e8me a bien fonctionn\u00e9, mais n\u2019a jamais \u00e9t\u00e9 utilis\u00e9 en raison de probl\u00e8mes\\njuridiques.x Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\",   \"67\": \"Voici",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_55",
+      "length": 500
+    }
+  },
+  "55": {
+    "content": "quelques domaines dans lesquels les syst\u00e8mes experts peuvent\\n\u00eatre utilis\u00e9s :\\n\u2014le diagnostic, qui consiste \u00e0 tenter de d\u00e9tecter une maladie chez\\nun \u00eatre humain ou un dysfonctionnement d\u2019une machine sur la\\nbase de sympt\u00f4mes, c\u2019est-\u00e0-dire de manifestations observables de\\nla maladie ou du dysfonctionnement;\\n\u2014la surveillance, dont l\u2019objectif est de garder un processus sous\\ncontr\u00f4le en recueillant des informations et en faisant des estima-\\ntions sur son d\u00e9roulement;\\n\u2014la plani\ufb01cation, qui vise",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_56",
+      "length": 500
+    }
+  },
+  "56": {
+    "content": "\u00e0 atteindre un certain objectif avec les\\nressources disponibles;\\n\u2014l\u2019interpr\u00e9tation des informations et des signaux, dont le but est\\nd\u2019identi\ufb01er l\u2019occurrence de situations particuli\u00e8res d\u2019int\u00e9r\u00eat dans\\nles donn\u00e9es d\u2019entr\u00e9e.\",   \"68\": \"Le d\u00e9veloppement d\u2019un syst\u00e8me expert n\u00e9cessite l\u2019\u00e9criture de r\u00e8gles\\ng\u00e9n\u00e9rales sur le domaine, qui doivent \u00eatre recueillies en interrogeant un ex-\\npert du domaine. Ce processus, connu sous le nom d\u2019extraction de connais-\\nsances, s\u2019est av\u00e9r\u00e9 extr\u00eamement long et",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_57",
+      "length": 499
+    }
+  },
+  "57": {
+    "content": "dif\ufb01cile. A\ufb01n de l\u2019automatiser, il\\nest possible d\u2019utiliser l\u2019apprentissage automatique, abord\u00e9 dans la section\\nsuivante.\\n1.2.3\",   \"69\": \"Apprentissage automatique\\nEn 1984, Simon a donn\u00e9 la d\u00e9\ufb01nition suivante de l\u2019apprentissage [ 22]:\\n\\\"L\u2019apprentissage consiste en des changements dans le syst\u00e8me qui sont\\nadaptatifs, dans le sens o\u00f9 ils permettent au syst\u00e8me d\u2019ex\u00e9cuter la m\u00eame\\nt\u00e2che ou des t\u00e2ches tir\u00e9es de la m\u00eame population de mani\u00e8re plus ef\ufb01cace et\\nef\ufb01ciente la prochaine fois\\\". Il est",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_58",
+      "length": 500
+    }
+  },
+  "58": {
+    "content": "certain que pour fabriquer des machines\\nque l\u2019on peut quali\ufb01er d\u2019intelligentes, il est n\u00e9cessaire\",   \"70\": \"de leur donner la\\ncapacit\u00e9 d\u2019\u00e9tendre leurs connaissances et leurs comp\u00e9tences de mani\u00e8re\\nautonome. Les deux principales utilisations de l\u2019apprentissage automatique\\n\\n donn\u00e9es d\u2019entr\u00e9e. Le d\u00e9veloppement d\u2019un syst\u00e8me expert n\u00e9cessite l\u2019\u00e9criture de r\u00e8gles\\ng\u00e9n\u00e9rales sur le domaine, qui doivent \u00eatre recueillies en interrogeant un ex-\\npert du domaine. Ce processus, connu sous le nom",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_59",
+      "length": 494
+    }
+  },
+  "59": {
+    "content": "d\u2019extraction de connais-\\nsances, s\u2019est av\u00e9r\u00e9 extr\u00eamement long et dif\ufb01cile.\",   \"71\": \"A\ufb01n de l\u2019automatiser, il\\nest possible d\u2019utiliser l\u2019apprentissage automatique, abord\u00e9 dans la section\\nsuivante.\\n1.2.3 Apprentissage automatique\\nEn 1984, Simon a donn\u00e9 la d\u00e9\ufb01nition suivante de l\u2019apprentissage [ 22]:\\n\\\"L\u2019apprentissage consiste en des changements dans le syst\u00e8me qui sont\\nadaptatifs, dans le sens o\u00f9 ils permettent au syst\u00e8me d\u2019ex\u00e9cuter la m\u00eame\\nt\u00e2che ou des t\u00e2ches tir\u00e9es de la m\u00eame population",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_60",
+      "length": 500
+    }
+  },
+  "60": {
+    "content": "de mani\u00e8re plus ef\ufb01cace et\\nef\ufb01ciente la prochaine fois\\\".\",   \"72\": \"Il est certain que pour fabriquer des machines\\nque l\u2019on peut quali\ufb01er d\u2019intelligentes, il est n\u00e9cessaire de leur donner la\\ncapacit\u00e9 d\u2019\u00e9tendre leurs connaissances et leurs comp\u00e9tences de mani\u00e8re\\nautonome. Les deux principales utilisations de l\u2019apprentissage automatique\\nsont l\u2019extraction de connaissances et l\u2019am\u00e9lioration des performances d\u2019une\\nmachine.\",   \"73\": \"Les connaissances extraites peuvent ensuite \u00eatre utilis\u00e9es",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_61",
+      "length": 498
+    }
+  },
+  "61": {
+    "content": "par une\\nmachine comme base de connaissances d\u2019un syst\u00e8me expert, ou par des\\nhumains, par exemple dans le cas de la d\u00e9couverte de nouvelles th\u00e9ories\\nscienti\ufb01ques. L\u2019am\u00e9lioration des performances d\u2019une machine passe, par\\nexemple, par l\u2019augmentation des capacit\u00e9s perceptives et motrices d\u2019un\\nrobot.\\nComme les techniques d\u2019IA en g\u00e9n\u00e9ral, les techniques d\u2019apprentis-\\nsage peuvent \u00eatre divis\u00e9es en techniques symboliques et sous-symboliques.1.3.\",   \"74\": \"IA sub-symbolique xi\",   \"75\": \"La",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_62",
+      "length": 493
+    }
+  },
+  "62": {
+    "content": "technique la plus int\u00e9ressante de l\u2019apprentissage symbolique est l\u2019ap-\\nprentissage inductif : le syst\u00e8me part de faits et d\u2019observations provenant\\nd\u2019un instructeur ou de l\u2019environnement, et les g\u00e9n\u00e9ralise pour obtenir des\\nconnaissances qui, esp\u00e9rons-le, sont \u00e9galement valables pour des cas non\\nencore observ\u00e9s (induction).\\nDans l\u2019apprentissage inductif par les exemples, l\u2019enseignant fournit\\nun ensemble d\u2019exemples et de contre-exemples d\u2019un concept, et le but est\\nde d\u00e9duire une description",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_63",
+      "length": 499
+    }
+  },
+  "63": {
+    "content": "du concept lui-m\u00eame.\",   \"76\": \"Un exemple consiste en\\nla description d\u2019une instance du domaine du discours et d\u2019une \u00e9tiquette;\\ncette derni\u00e8re peut \u00eatre +si l\u2019instance appartient au concept \u00e0 apprendre,\\nou\\u0000si l\u2019instance n\u2019y appartient pas (contre-exemple). Dans le premier cas,\\non parle d\u2019une instance appartenant \u00e0 la classe positive et dans le second\\nd\u2019une instance appartenant \u00e0 la classe n\u00e9gative. Un concept n\u2019est donc\\nrien d\u2019autre qu\u2019\",   \"77\": \"un sous-ensemble de l\u2019ensemble de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_64",
+      "length": 496
+    }
+  },
+  "64": {
+    "content": "toutes les instances\\npossibles du domaine de discours, ou univers. L\u2019ensemble d\u2019exemples et\\nde contre-exemples fournis par l\u2019enseignant est appel\u00e9 jeu d\u2019apprentissage. La description du concept \u00e0 apprendre doit \u00eatre telle qu\u2019elle puisse \u00eatre\\nutilis\u00e9e pour d\u00e9cider si une nouvelle instance, n\u2019appartenant pas au jeu\\nd\u2019apprentissage, appartient ou non au concept.\",   \"78\": \"Les syst\u00e8mes d\u2019apprentissage, qu\u2019ils soient issus de langages attributs-\\nvaleurs ou de programmes logiques, ont eu un",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_65",
+      "length": 495
+    }
+  },
+  "65": {
+    "content": "large \u00e9ventail d\u2019applications,\\nallant du diagnostic des maladies \u00e0 la pr\u00e9diction des relations structure-\\nactivit\u00e9 dans la conception des m\u00e9dicaments, en passant par la pr\u00e9diction\\nde la canc\u00e9rog\u00e9nicit\u00e9 des substances chimiques.\",   \"79\": \"Avec la quantit\u00e9 croissante\\nde donn\u00e9es qui sont stock\u00e9es chaque jour par les entreprises et les organi-\\nsations en g\u00e9n\u00e9ral, les algorithmes d\u2019apprentissage deviennent de plus en\\nplus importants car ils permettent d\u2019extraire de cette masse de donn\u00e9es",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_66",
+      "length": 494
+    }
+  },
+  "66": {
+    "content": "des\\ninformations cach\u00e9es, nouvelles et potentiellement utiles.\",   \"80\": \"C\u2019est ce qu\u2019on\\nappelle l\u2019exploration de donn\u00e9es, ou l\u2019extraction de connaissances \u00e0 partir\\nde donn\u00e9es brutes.\\n1.3\\nensemble de l\u2019ensemble de toutes les instances\\npossibles du domaine de discours, ou univers. L\u2019ensemble d\u2019exemples et\\nde contre-exemples fournis par l\u2019enseignant est appel\u00e9 jeu d\u2019apprentissage. La description du concept \u00e0 apprendre doit \u00eatre telle qu\u2019elle puisse \u00eatre\\nutilis\u00e9e pour d\u00e9cider si une",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_67",
+      "length": 492
+    }
+  },
+  "67": {
+    "content": "nouvelle instance, n\u2019appartenant pas au jeu\\nd\u2019apprentissage, appartient ou non au concept.\",   \"81\": \"Les syst\u00e8mes d\u2019apprentissage, qu\u2019ils soient issus de langages attributs-\\nvaleurs ou de programmes logiques, ont eu un large \u00e9ventail d\u2019applications,\\nallant du diagnostic des maladies \u00e0 la pr\u00e9diction des relations structure-\\nactivit\u00e9 dans la conception des m\u00e9dicaments, en passant par la pr\u00e9diction\\nde la canc\u00e9rog\u00e9nicit\u00e9 des substances chimiques.\",   \"82\": \"Avec la quantit\u00e9 croissante\\nde",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_68",
+      "length": 495
+    }
+  },
+  "68": {
+    "content": "donn\u00e9es qui sont stock\u00e9es chaque jour par les entreprises et les organi-\\nsations en g\u00e9n\u00e9ral, les algorithmes d\u2019apprentissage deviennent de plus en\\nplus importants car ils permettent d\u2019extraire de cette masse de donn\u00e9es des\\ninformations cach\u00e9es, nouvelles et potentiellement utiles.\",   \"83\": \"C\u2019est ce qu\u2019on\\nappelle l\u2019exploration de donn\u00e9es, ou l\u2019extraction de connaissances \u00e0 partir\\nde donn\u00e9es brutes.\\n1.3 IA sub-symbolique\\nNous allons maintenant nous int\u00e9resser \u00e0 deux techniques",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_69",
+      "length": 488
+    }
+  },
+  "69": {
+    "content": "subsymbo-\\nliques : les r\u00e9seaux de neurones et les algorithmes g\u00e9n\u00e9tiques. 1.3.1 Les r\u00e9seaux de neurones\\nL\u2019id\u00e9e de simuler le fonctionnement du cerveau humain et animal\\na\ufb01n d\u2019obtenir un comportement intelligent pr\u00e9c\u00e8de le d\u00e9veloppement dexii Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\\n\\u0001\\u0002W1W2....\",   \"84\": \"Wnx1x2\\nxn-1\\nFigura 7: Modello del neurone arti\ufb01ciale.3 Tecniche subsimbolicheVedremo ora tre tecniche subsimboliche: le reti neurali, gli algoritmi geneticie l\u2019intelligenza degli",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_70",
+      "length": 494
+    }
+  },
+  "70": {
+    "content": "sciami.3.1 Reti neuraliL\u2019idea di simulare il funzionamento del cervello umano e animale per ottenerecomportamenti intelligenti risale a prima della realizzazione del computer,in particolare all\u2019articolo del 1943 di McCulloch e Pitts [ MP43] nel quale sipropose un modello matematico del neurone\",   \"85\": \"umano e si mostr\u00f2 come reticomposte di tali neuroni arti\ufb01ciali fossero in grado di rappresentare complessefunzioni booleane. Il modello del neurone attualmente pi\u00f9 di\\u0000uso \u00e8 chiamato neurone",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_71",
+      "length": 500
+    }
+  },
+  "71": {
+    "content": "sigmoi-dale ed \u00e8 costituito da una unit\u00e0 con n ingressi numerici e una uscita numerica.\",   \"86\": \"L\u2019uscita \u00e8 calcolata in funzione degli ingressi nel seguente modo: ciascun in-gressoxiviene moltiplicato per un pesoWi, i prodotti di queste moltiplicazionisono sommati e il risultato viene fornito in ingresso ad una funzione sigmoida-le. Un modello di questo tipo di neurone \u00e8 rappresentato in Figura 7, insiemeall\u2019aspetto della funzione sigmoidale.\",   \"87\": \"Si noti che nella somma c\u2019\u00e8 un",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_72",
+      "length": 491
+    }
+  },
+  "72": {
+    "content": "terminecostante pari a\\u0000\\u0000che viene assimilato ad un comune ingresso supponendoche l\u2019ingresso sia sempre a -1 e che il peso per quell\u2019ingresso valga i. Questo modello si comporta in maniera simile a un neurone naturale: ov-vero si \u201c attiva \u201d quando riceve gli ingressi \u201cgiusti\u201d e si \u201cdisattiva\u201d in corri-spondenza di ingressi \u201csbagliati\u201d . Un neurone \u00e8 attivo quando la sua uscita\u00e8 vicina a +1 ed \u00e8 disattivo quando la sua uscita \u00e8 vicina a -1.\",   \"88\": \"Quali sianogli ingressi giusti o",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_73",
+      "length": 496
+    }
+  },
+  "73": {
+    "content": "sbagliati \u00e8 determinato dai valori dei pesi degli ingressi:valori positivi dei pesi fanno s\u00ec che i relativi ingressi tendano a portare il neu-20FIGURE 1.1\u2013 Un mod\u00e8le de neurone arti\ufb01ciel avec une fonction sigmo\u00efde.\\nl\u2019ordinateur, en particulier \u00e0 l\u2019article de 1943 de McCulloch\\nato viene fornito in ingresso ad una funzione sigmoida-le. Un modello di questo tipo di neurone \u00e8 rappresentato in Figura 7, insiemeall\u2019aspetto della funzione sigmoidale.\",   \"89\": \"Si noti che nella somma c\u2019\u00e8 un",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_74",
+      "length": 491
+    }
+  },
+  "74": {
+    "content": "terminecostante pari a\\u0000\\u0000che viene assimilato ad un comune ingresso supponendoche l\u2019ingresso sia sempre a -1 e che il peso per quell\u2019ingresso valga i. Questo modello si comporta in maniera simile a un neurone naturale: ov-vero si \u201c attiva \u201d quando riceve gli ingressi \u201cgiusti\u201d e si \u201cdisattiva\u201d in corri-spondenza di ingressi \u201csbagliati\u201d . Un neurone \u00e8 attivo quando la sua uscita\u00e8 vicina a +1 ed \u00e8 disattivo quando la sua uscita \u00e8 vicina a -1.\",   \"90\": \"Quali sianogli ingressi giusti o",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_75",
+      "length": 496
+    }
+  },
+  "75": {
+    "content": "sbagliati \u00e8 determinato dai valori dei pesi degli ingressi:valori positivi dei pesi fanno s\u00ec che i relativi ingressi tendano a portare il neu-20FIGURE 1.1\u2013\",   \"91\": \"Un mod\u00e8le de neurone arti\ufb01ciel avec une fonction sigmo\u00efde.\\nl\u2019ordinateur, en particulier \u00e0 l\u2019article de 1943 de McCulloch et Pitts [ 15]\\ndans lequel un mod\u00e8le math\u00e9matique du neurone humain a \u00e9t\u00e9 propos\u00e9 et\\nil a \u00e9t\u00e9 montr\u00e9 comment les r\u00e9seaux compos\u00e9s de tels neurones arti\ufb01ciels\\n\u00e9taient capables de repr\u00e9senter des fonctions",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_76",
+      "length": 495
+    }
+  },
+  "76": {
+    "content": "bool\u00e9ennes complexes.\",   \"92\": \"Le mod\u00e8le de neurone le plus populaire actuellement est appel\u00e9 neu-\\nrone sigmo\u00efde et consiste en une unit\u00e9 avec nentr\u00e9es num\u00e9riques et une\\nsortie num\u00e9rique. La sortie est calcul\u00e9e en fonction des entr\u00e9es de la ma-\\nni\u00e8re suivante : chaque entr\u00e9e xiest multipli\u00e9e par un poids Wi, les produits\\nde ces multiplications sont additionn\u00e9s et le r\u00e9sultat est donn\u00e9 en entr\u00e9e\\nd\u2019une fonction sigmo\u00efde. Un mod\u00e8le de ce type de neurone est pr\u00e9sent\u00e9 en\\nFigure 1.1, ainsi que",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_77",
+      "length": 500
+    }
+  },
+  "77": {
+    "content": "l\u2019aspect de la fonction sigmo\u00efde.\",   \"93\": \"Notons que dans la\\nsomme, il y a un terme constant qui est assimil\u00e9 \u00e0 une entr\u00e9e commune en\\nsupposant que cette entr\u00e9e est toujours \u00e0 \\u00001et que le poids de cette entr\u00e9e\\nvaut i. Ce mod\u00e8le se comporte de la m\u00eame mani\u00e8re qu\u2019un neurone naturel :\\nil est \\\"activ\u00e9\\\" lorsqu\u2019il re\u00e7oit les \\\"bonnes\\\" entr\u00e9es et \\\"d\u00e9sactiv\u00e9\\\" lorsqu\u2019il\\nre\u00e7oit les \\\"mauvaises\\\" entr\u00e9es. Un neurone est actif lorsque sa sortie est\\nproche de +1et inactif lorsque sa sortie",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_78",
+      "length": 499
+    }
+  },
+  "78": {
+    "content": "est proche de \\u00001.\",   \"94\": \"Les valeurs des\\npoids d\u2019entr\u00e9e d\u00e9terminent quelles entr\u00e9es sont bonnes ou mauvaises : des\\nvaleurs positives des poids font que les entr\u00e9es relatives tendent \u00e0 conduire\\nle neurone vers l\u2019activation et des valeurs n\u00e9gatives vers la d\u00e9sactivation, et\\nvice versa dans le cas de poids n\u00e9gatifs.\",   \"95\": \"Les neurones sont ensuite connec-\\nt\u00e9s les uns aux autres dans des r\u00e9seaux, de sorte que la sortie d\u2019un neurone\\npeut \u00eatre l\u2019entr\u00e9e d\u2019autres neurones et que son",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_79",
+      "length": 499
+    }
+  },
+  "79": {
+    "content": "activation affecte l\u2019activation\\ndes neurones en aval. Le neurone sigmo\u00efde d\u00e9rive du perceptron propos\u00e9\\nen 1962 par Rosen-Blatt : il en diff\u00e8re car au lieu d\u2019une fonction sigmo\u00efde,\\nle perceptron a une fonction \u00e0 pas, c\u2019est-\u00e0-dire une fonction qui vaut 0\\npour les valeurs inf\u00e9rieures \u00e0 0 et 1 pour les valeurs sup\u00e9rieures ou \u00e9gales1.3.\",   \"96\": \"IA sub-symbolique xiii\\n\u00e00. Un seul neurone sigmo\u00efde est capable de repr\u00e9senter une certaine\\nclasse de concepts en fonction de ses poids : en",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_80",
+      "length": 491
+    }
+  },
+  "80": {
+    "content": "particulier, il est capable\\nde repr\u00e9senter les concepts dans lesquels les exemples sont s\u00e9par\u00e9s des\\ncontre-exemples par un hyperplan (en imaginant de consid\u00e9rer l\u2019espace\\ndes entr\u00e9es comme un espace euclidien).\",   \"97\": \"Puis ils isolent dans l\u2019espace des\\nentr\u00e9es un demi-espace, c\u2019est-\u00e0-dire une r\u00e9gion d\u00e9limit\u00e9e par un hyperplan\\n(dans le\\n des valeurs n\u00e9gatives vers la d\u00e9sactivation, et\\nvice versa dans le cas de poids n\u00e9gatifs. Les neurones sont ensuite connec-\\nt\u00e9s les uns aux autres dans",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_81",
+      "length": 500
+    }
+  },
+  "81": {
+    "content": "des r\u00e9seaux, de sorte que la sortie d\u2019un neurone\\npeut \u00eatre l\u2019entr\u00e9e d\u2019autres neurones et que son activation affecte l\u2019activation\\ndes neurones en aval.\",   \"98\": \"Le neurone sigmo\u00efde d\u00e9rive du perceptron propos\u00e9\\nen 1962 par Rosen-Blatt : il en diff\u00e8re car au lieu d\u2019une fonction sigmo\u00efde,\\nle perceptron a une fonction \u00e0 pas, c\u2019est-\u00e0-dire une fonction qui vaut 0\\npour les valeurs inf\u00e9rieures \u00e0 0 et 1 pour les valeurs sup\u00e9rieures ou \u00e9gales1.3. IA sub-symbolique xiii\\n\u00e00.\",   \"99\": \"Un seul",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_82",
+      "length": 493
+    }
+  },
+  "82": {
+    "content": "neurone sigmo\u00efde est capable de repr\u00e9senter une certaine\\nclasse de concepts en fonction de ses poids : en particulier, il est capable\\nde repr\u00e9senter les concepts dans lesquels les exemples sont s\u00e9par\u00e9s des\\ncontre-exemples par un hyperplan (en imaginant de consid\u00e9rer l\u2019espace\\ndes entr\u00e9es comme un espace euclidien). Puis ils isolent dans l\u2019espace des\\nentr\u00e9es un demi-espace, c\u2019est-\u00e0-dire une r\u00e9gion d\u00e9limit\u00e9e par un hyperplan\\n(dans le cas de deux entr\u00e9es, il s\u2019agit d\u2019une droite).\",   \"100\":",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_83",
+      "length": 497
+    }
+  },
+  "83": {
+    "content": "\"A\ufb01n de repr\u00e9senter des\\nconcepts plus complexes, il est n\u00e9cessaire de composer les neurones en\\nr\u00e9seaux. Les r\u00e9seaux les plus simples sont appel\u00e9s r\u00e9seaux feedforward et sont\\nconstitu\u00e9s de couches de neurones : les entr\u00e9es sont connect\u00e9es \u00e0 la premi\u00e8re\\ncouche de neurones, les sorties de la premi\u00e8re couche de neurones sont\\nconnect\u00e9es aux entr\u00e9es de la deuxi\u00e8me couche, et ainsi de suite, jusqu\u2019\u00e0\\natteindre la derni\u00e8re couche dont les sorties deviennent les sorties du\\nr\u00e9seau.\",   \"101\": \"Les",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_84",
+      "length": 498
+    }
+  },
+  "84": {
+    "content": "couches de neurones de la premi\u00e8re \u00e0 l\u2019avant-derni\u00e8re couche\\nsont dites \\\"cach\u00e9es\\\". Ainsi, un r\u00e9seau sigmoidal \u00e0 une couche cach\u00e9e pourra\\ncorrespondre par exemple \u00e0 la fonction fq:Rd\\u0000!Rqd\u00e9\ufb01nie par\\nfq(x)=W1sigmo\u00efde (W0x+b0)+b1, (1.1)\\no\u00f9 les poids du r\u00e9seau sont les coef\ufb01cients des matrices W12Rh\u21e5q,W12\\nRd\u21e5het des vecteurs (dits \\\"biais\\\") b02Rh,b12Rq. Le vecteur q=\\n(W1,W0,b1,b0)contient tous les poids du r\u00e9seau. L\u2019entier hcorrespond\\nau nombre d\u2019unit\u00e9s cach\u00e9es.\",   \"102\": \"Plus il sera",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_85",
+      "length": 500
+    }
+  },
+  "85": {
+    "content": "grand, et plus le r\u00e9seau pourra\\nmod\u00e9liser des fonctions complexes.\\nMais comment obtenir un r\u00e9seau qui identi\ufb01e un concept? Contraire-\\nment aux syst\u00e8mes bas\u00e9s sur la connaissance, dans les r\u00e9seaux neuronaux,\\nle choix des poids \u00e0 la main serait trop complexe. Pour cela, des algorithmes\\nd\u2019apprentissage sont utilis\u00e9s.\",   \"103\": \"Dans ce cas \u00e9galement, nous disposons d\u2019un\\nensemble d\u2019apprentissage, qui contient un ensemble de paires (entr\u00e9es,\\nsorties), \u00e0 la diff\u00e9rence que les entr\u00e9es sont",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_86",
+      "length": 495
+    }
+  },
+  "86": {
+    "content": "toutes continues, que les sorties\\npeuvent \u00eatre multiples et qu\u2019elles sont \u00e9galement continues, c\u2019est-\u00e0-dire\\nqu\u2019elles ne sont pas des + ou des - mais des nombres r\u00e9els (comme par\\nexemple dans l\u2019\u00e9quation (1.1)).\",   \"104\": \"Dans ce cas, on recherche la valeur des\\npoids pour laquelle une certaine fonction de l\u2019erreur sur l\u2019ensemble d\u2019ap-\\nprentissage est minimale, c\u2019est-\u00e0-dire une fonction des diff\u00e9rences entre\\nles sorties de l\u2019ensemble d\u2019apprentissage et celles du r\u00e9seau lorsque les\\nvaleurs",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_87",
+      "length": 499
+    }
+  },
+  "87": {
+    "content": "de la paire sont fournies en entr\u00e9e. La fonction la plus utilis\u00e9e est\\nla somme des erreurs quadratiques.\",   \"105\": \"Comme on le verra dans la section\\nsuivante, quand on dispose d\u2019un mod\u00e8le probabiliste, la fonction d\u2019erreur\\nchoisie est l\u2019oppos\u00e9 de la vraisemblance du mod\u00e8le.xiv Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs L\u2019algorithme le plus largement utilis\u00e9 pour l\u2019apprentissage dans les\\nr\u00e9seaux neurona\\nissage sont utilis\u00e9s.\",   \"106\": \"Dans ce cas \u00e9galement, nous disposons d\u2019un\\nensemble",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_88",
+      "length": 493
+    }
+  },
+  "88": {
+    "content": "d\u2019apprentissage, qui contient un ensemble de paires (entr\u00e9es,\\nsorties), \u00e0 la diff\u00e9rence que les entr\u00e9es sont toutes continues, que les sorties\\npeuvent \u00eatre multiples et qu\u2019elles sont \u00e9galement continues, c\u2019est-\u00e0-dire\\nqu\u2019elles ne sont pas des + ou des - mais des nombres r\u00e9els (comme par\\nexemple dans l\u2019\u00e9quation (1.1)).\",   \"107\": \"Dans ce cas, on recherche la valeur des\\npoids pour laquelle une certaine fonction de l\u2019erreur sur l\u2019ensemble d\u2019ap-\\nprentissage est minimale, c\u2019est-\u00e0-dire une",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_89",
+      "length": 494
+    }
+  },
+  "89": {
+    "content": "fonction des diff\u00e9rences entre\\nles sorties de l\u2019ensemble d\u2019apprentissage et celles du r\u00e9seau lorsque les\\nvaleurs de la paire sont fournies en entr\u00e9e. La fonction la plus utilis\u00e9e est\\nla somme des erreurs quadratiques.\",   \"108\": \"Comme on le verra dans la section\\nsuivante, quand on dispose d\u2019un mod\u00e8le probabiliste, la fonction d\u2019erreur\\nchoisie est l\u2019oppos\u00e9 de la vraisemblance du mod\u00e8le.xiv Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs L\u2019algorithme le plus largement utilis\u00e9 pour l\u2019apprentissage dans",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_90",
+      "length": 499
+    }
+  },
+  "90": {
+    "content": "les\\nr\u00e9seaux neuronaux multicouches est appel\u00e9 r\u00e9tropropagation ( backpropaga-\\ntion). Le nom de \\\"backpropagation\\\" et a \u00e9t\u00e9 propos\u00e9 par Rumelhart, Hinton\\net Williams en 1986.\",   \"109\": \"Elle consiste \u00e0 calculer l\u2019erreur de la couche de sortie du\\nr\u00e9seau sur chaque exemple et \u00e0 la propager en arri\u00e8re vers les neurones des\\ncouches cach\u00e9es. Sur la base de l\u2019erreur propag\u00e9e, les poids des neurones\\nsont ensuite mis \u00e0 jour. Si, apr\u00e8s avoir consid\u00e9r\u00e9 tous les exemples de cette\\nmani\u00e8re, l\u2019erreur",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_91",
+      "length": 499
+    }
+  },
+  "91": {
+    "content": "est tomb\u00e9e en dessous d\u2019un seuil pr\u00e9d\u00e9\ufb01ni, on s\u2019arr\u00eate,\\nsinon tous les exemples de l\u2019ensemble d\u2019apprentissage sont consid\u00e9r\u00e9s \u00e0\\nnouveau.\",   \"110\": \"Les r\u00e9seaux multicouches profonds ont connu un grand succ\u00e8s et ont\\n\u00e9t\u00e9 appliqu\u00e9s dans de nombreux domaines, notamment la vision par ordi-\\nnateur, la reconnaissance vocale, la traduction automatique, la bioinforma-\\ntique, la conception de m\u00e9dicaments et l\u2019analyse d\u2019images m\u00e9dicales. Dans\\nle domaine de la vision par ordinateur, par exemple, ils",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_92",
+      "length": 499
+    }
+  },
+  "92": {
+    "content": "ont \u00e9t\u00e9 capables de\\nreconna\u00eetre des caract\u00e8res manuscrits, de reconna\u00eetre des objets dans des\\nimages et des vid\u00e9os et de classer des images.\",   \"111\": \"Ces r\u00e9sultats ont \u00e9t\u00e9 obtenus\\n\u00e0 l\u2019aide d\u2019un type particulier de r\u00e9seau neuronal appel\u00e9 \\\"convolutif\\\". Dans\\nce r\u00e9seau, certaines couches appliquent une op\u00e9ration de convolution \u00e0\\nl\u2019entr\u00e9e : un \ufb01ltre est appliqu\u00e9 \u00e0 l\u2019entr\u00e9e bidimensionnelle pour produire\\nune image \ufb01ltr\u00e9e.\",   \"112\": \"Ces \ufb01ltres, qui sont entra\u00een\u00e9s conjointement avec",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_93",
+      "length": 492
+    }
+  },
+  "93": {
+    "content": "les\\nparam\u00e8tres des couches traditionnelles, identi\ufb01ent des caract\u00e9ristiques\\nde l\u2019image de complexit\u00e9 croissante : par exemple, une premi\u00e8re couche\\nconvolutive pourrait identi\ufb01er des bords rectilignes approximatifs dans\\nl\u2019image d\u2019entr\u00e9e, une deuxi\u00e8me couche des combinaisons de bords recti-\\nlignes (angles) et ainsi de suite, jusqu\u2019\u00e0 identi\ufb01er les caract\u00e9ristiques de\\nl\u2019image qui servent \u00e0 la classer.\",   \"113\": \"1.3.2 Les algorithmes g\u00e9n\u00e9tiques\\nAlors que les r\u00e9seaux neuronaux s\u2019inspirent du",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_94",
+      "length": 499
+    }
+  },
+  "94": {
+    "content": "cerveau humain pour\\nproduire un comportement intelligent, les algorithmes g\u00e9n\u00e9tiques s\u2019ins-\\npirent de la th\u00e9orie de l\u2019\u00e9volution.\",   \"114\": \"Il s\u2019agit d\u2019algorithmes de recherche dans\\nl\u2019espace des \u00e9tats, dans lequel un \u00e9tat est consid\u00e9r\u00e9 comme un individu, au\\nsein d\u2019une population d\u2019individus qui est amen\u00e9 \u00e0 \u00e9voluer selon les lois de\\nl\u2019\u00e9volutionnisme a\ufb01n d\u2019obtenir des \u00e9tats qui sont de bonnes solutions au\\nprobl\u00e8me.\\nPour appliquer un algorithme g\u00e9n\u00e9tique, il est n\u00e9cessaire de repr\u00e9sen-\\nter",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_95",
+      "length": 500
+    }
+  },
+  "95": {
+    "content": "l\u2019\u00e9tat comme une s\u00e9quence de symboles\\n les\\nparam\u00e8tres des couches traditionnelles, identi\ufb01ent des caract\u00e9ristiques\\nde l\u2019image de complexit\u00e9 croissante : par exemple, une premi\u00e8re couche\\nconvolutive pourrait identi\ufb01er des bords rectilignes approximatifs dans\\nl\u2019image d\u2019entr\u00e9e, une deuxi\u00e8me couche des combinaisons de bords recti-\\nlignes (angles) et ainsi de suite, jusqu\u2019\u00e0 identi\ufb01er les caract\u00e9ristiques de\\nl\u2019image qui servent \u00e0 la classer.\",   \"115\": \"1.3.2 Les algorithmes g\u00e9n\u00e9tiques\\nAlors",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_96",
+      "length": 498
+    }
+  },
+  "96": {
+    "content": "que les r\u00e9seaux neuronaux s\u2019inspirent du cerveau humain pour\\nproduire un comportement intelligent, les algorithmes g\u00e9n\u00e9tiques s\u2019ins-\\npirent de la th\u00e9orie de l\u2019\u00e9volution.\",   \"116\": \"Il s\u2019agit d\u2019algorithmes de recherche dans\\nl\u2019espace des \u00e9tats, dans lequel un \u00e9tat est consid\u00e9r\u00e9 comme un individu, au\\nsein d\u2019une population d\u2019individus qui est amen\u00e9 \u00e0 \u00e9voluer selon les lois de\\nl\u2019\u00e9volutionnisme a\ufb01n d\u2019obtenir des \u00e9tats qui sont de bonnes solutions au\\nprobl\u00e8me.\\nPour appliquer un algorithme",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_97",
+      "length": 494
+    }
+  },
+  "97": {
+    "content": "g\u00e9n\u00e9tique, il est n\u00e9cessaire de repr\u00e9sen-\\nter l\u2019\u00e9tat comme une s\u00e9quence de symboles (dans le cas le plus fr\u00e9quent\\nune s\u00e9quence de bits), qui repr\u00e9sente le patrimoine g\u00e9n\u00e9tique (ou g\u00e9no-\\ntype) d\u2019un individu et le caract\u00e9rise compl\u00e8tement.\",   \"117\": \"Il est alors n\u00e9cessaire1.3. IA sub-symbolique xv\\nde disposer d\u2019une fonction d\u2019aptitude qui, compte tenu d\u2019une s\u00e9quence de\\nsymboles, indique le degr\u00e9 d\u2019aptitude de l\u2019individu, c\u2019est-\u00e0-dire sa capacit\u00e9\\n\u00e0 survivre dans son environnement. Dans le",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_98",
+      "length": 498
+    }
+  },
+  "98": {
+    "content": "cas d\u2019un algorithme g\u00e9n\u00e9tique,\\nla fonction de \ufb01tness repr\u00e9sente la proximit\u00e9 de l\u2019\u00e9tat par rapport \u00e0 une\\nsolution ou sa qualit\u00e9 en tant que solution. Un algorithme g\u00e9n\u00e9tique commence avec une population initiale d\u2019in-\\ndividus g\u00e9n\u00e9r\u00e9s al\u00e9atoirement.\",   \"118\": \"Il ex\u00e9cute ensuite un cycle qui se termine\\nlorsque la \ufb01tness du meilleur individu d\u00e9passe un certain seuil, c\u2019est-\u00e0-dire\\nlorsque la population contient une solution suf\ufb01samment bonne. \u00c0 chaque\\n\u00e9tape du cycle, une nouvelle population",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_99",
+      "length": 499
+    }
+  },
+  "99": {
+    "content": "est g\u00e9n\u00e9r\u00e9e \u00e0 l\u2019aide des op\u00e9rateurs\\nde s\u00e9lection, de croisement et de mutation. En pratique, chaque it\u00e9ration du\\ncycle correspond \u00e0 une g\u00e9n\u00e9ration.\",   \"119\": \"La nouvelle population est g\u00e9n\u00e9r\u00e9e en\\ns\u00e9lectionnant des paires d\u2019individus au hasard, mais avec une probabilit\u00e9\\nqui d\u00e9pend de leur aptitude : les individus ayant une meilleure aptitude\\nont plus de chances d\u2019\u00eatre s\u00e9lectionn\u00e9s.\",   \"120\": \"Ensuite, on applique l\u2019op\u00e9rateur\\nde croisement qui, \u00e9tant donn\u00e9 le couple d\u2019individus, en",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_100",
+      "length": 493
+    }
+  },
+  "100": {
+    "content": "produit un autre,\\nobtenu en \\\"m\u00e9langeant\\\" le patrimoine g\u00e9n\u00e9tique de diff\u00e9rentes mani\u00e8res :\\ndans le cas de g\u00e9notypes pr\u00e9sent\u00e9s comme des s\u00e9quences de bits de lon-\\ngueur \ufb01xe n, l\u2019op\u00e9rateur de croisement le plus simple choisit un nombre\\nentier al\u00e9atoire iinf\u00e9rieur \u00e0 net copie dans le premier descendant les pre-\\nmiers bits du premier parent et les derniers n\\u00001bits du second parent,\\ntandis que dans le second descendant il copie l\u2019inverse.\",   \"121\": \"Les descendants ainsi obtenus sont",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_101",
+      "length": 497
+    }
+  },
+  "101": {
+    "content": "ensuite soumis \u00e0 une mutation,\\ndans laquelle de petites modi\ufb01cations du g\u00e9notype sont apport\u00e9es au ha-\\nsard. Le processus de s\u00e9lection, de croisement et de mutation est r\u00e9p\u00e9t\u00e9\\njusqu\u2019\u00e0 l\u2019obtention d\u2019une nouvelle population de taille \ufb01xe. La \ufb01tness de\\ntous les individus de la nouvelle population est ensuite calcul\u00e9e. Il existe\\nde nombreuses variantes de ce type d\u2019algorithme.\",   \"122\": \"Par exemple, dans cer-\\ntains, une partie de l\u2019ancienne population est transf\u00e9r\u00e9e directement dans",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_102",
+      "length": 491
+    }
+  },
+  "102": {
+    "content": "la\\nnouvelle, en utilisant la s\u00e9lection. Les algorithmes g\u00e9n\u00e9tiques peuvent \u00e9ga-\\nlement \u00eatre utilis\u00e9s pour effectuer des t\u00e2ches d\u2019apprentissage automatique.\",   \"123\": \"Dans ce cas, il est n\u00e9cessaire de repr\u00e9senter les descriptions du concept \u00e0\\napprend\\n g\u00e9n\u00e9tique de diff\u00e9rentes mani\u00e8res :\\ndans le cas de g\u00e9notypes pr\u00e9sent\u00e9s comme des s\u00e9quences de bits de lon-\\ngueur \ufb01xe n, l\u2019op\u00e9rateur de croisement le plus simple choisit un nombre\\nentier al\u00e9atoire iinf\u00e9rieur \u00e0 net copie dans le premier",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_103",
+      "length": 494
+    }
+  },
+  "103": {
+    "content": "descendant les pre-\\nmiers bits du premier parent et les derniers n\\u00001bits du second parent,\\ntandis que dans le second descendant il copie l\u2019inverse.\",   \"124\": \"Les descendants ainsi obtenus sont ensuite soumis \u00e0 une mutation,\\ndans laquelle de petites modi\ufb01cations du g\u00e9notype sont apport\u00e9es au ha-\\nsard. Le processus de s\u00e9lection, de croisement et de mutation est r\u00e9p\u00e9t\u00e9\\njusqu\u2019\u00e0 l\u2019obtention d\u2019une nouvelle population de taille \ufb01xe. La \ufb01tness de\\ntous les individus de la nouvelle population",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_104",
+      "length": 500
+    }
+  },
+  "104": {
+    "content": "est ensuite calcul\u00e9e. Il existe\\nde nombreuses variantes de ce type d\u2019algorithme.\",   \"125\": \"Par exemple, dans cer-\\ntains, une partie de l\u2019ancienne population est transf\u00e9r\u00e9e directement dans la\\nnouvelle, en utilisant la s\u00e9lection. Les algorithmes g\u00e9n\u00e9tiques peuvent \u00e9ga-\\nlement \u00eatre utilis\u00e9s pour effectuer des t\u00e2ches d\u2019apprentissage automatique.\",   \"126\": \"Dans ce cas, il est n\u00e9cessaire de repr\u00e9senter les descriptions du concept \u00e0\\napprendre comme une s\u00e9quence de symboles : l\u2019aptitude sera",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_105",
+      "length": 498
+    }
+  },
+  "105": {
+    "content": "donn\u00e9e par\\nla pr\u00e9cision avec laquelle une description du concept classe les exemples\\nde l\u2019ensemble d\u2019apprentissage. Les algorithmes g\u00e9n\u00e9tiques ont eu de nombreuses applications en\\nbiologie, en ing\u00e9nierie et dans les sciences physiques et sociales.\",   \"127\": \"L\u2019une des\\nplus int\u00e9ressantes est la programmation automatique, c\u2019est-\u00e0-dire la g\u00e9n\u00e9ra-\\ntion automatique de programmes informatiques pour r\u00e9soudre un certain\\nprobl\u00e8me. Dans ce cas, le g\u00e9notype des individus est constitu\u00e9 d\u2019arbres",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_106",
+      "length": 494
+    }
+  },
+  "106": {
+    "content": "re-\\npr\u00e9sentant un seul programme dans un langage de programmation donn\u00e9.xvi Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\\nL\u2019op\u00e9rateur de croisement consiste \u00e0 remplacer un sous-arbre d\u2019un parent\\npar un sous-arbre de l\u2019autre parent.\",   \"128\": \"La fonction de \ufb01tness est calcul\u00e9e en\\nex\u00e9cutant le programme sur un ensemble de donn\u00e9es d\u2019entr\u00e9e.\\n1.4 Mod\u00e8les g\u00e9n\u00e9ratifs et apprentissage statistique\\nLa t\u00e2che g\u00e9n\u00e9rale de l\u2019apprentissage statistique est d\u2019apprendre un\\nobjet math\u00e9matique (par exemple une",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_107",
+      "length": 495
+    }
+  },
+  "107": {
+    "content": "fonction permettant de r\u00e9aliser des\\npr\u00e9dictions) \u00e0 partir d\u2019une base de donn\u00e9es dite d\u2019entra\u00eenement ou d\u2019ap-\\nprentissage. Voici quelques exemples :\\n\u2014en apprentissage supervis\u00e9\",   \"129\": \", il s\u2019agit d\u2019apprendre une fonction per-\\nmettant de pr\u00e9dire la valeur d\u2019une r\u00e9ponse y(par exemple la s\u00e9v\u00e9-\\nrit\u00e9 d\u2019une maladie) \u00e0 partir de donn\u00e9es x(par exemple une image\\nm\u00e9dicale);\\n\u2014en classi\ufb01cation non-supervis\u00e9e (aussi appel\u00e9e clustering ) , il s\u2019agit\\nd\u2019apprendre une partition de l\u2019espace dans",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_108",
+      "length": 494
+    }
+  },
+  "108": {
+    "content": "lequel vivent les don-\\nn\u00e9es, a\ufb01n de pouvoir les grouper en classes homog\u00e8nes;\",   \"130\": \"\u2014en apprentissage par renforcement, il s\u2019agit d\u2019apprendre une fonc-\\ntion qui \u00e0 chaque situation pr\u00e9conise une action \u00e0 entreprendre\\n(par exemple dans le cas d\u2019un algorithme de jeu d\u2019\u00e9checs). Dans tous ces cadres, les fonctions \u00e0 apprendre d\u00e9pendent de la loi de pro-\\nbabilit\u00e9 (inconnue) des donn\u00e9es observ\u00e9es. Une approche g\u00e9n\u00e9rale serait\\ndonc d\u2019apprendre dans un premier temps cette loi de probabilit\u00e9,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_109",
+      "length": 498
+    }
+  },
+  "109": {
+    "content": "puis de\\nl\u2019utiliser a\ufb01n de r\u00e9soudre le probl\u00e8me sp\u00e9ci\ufb01que qui nous int\u00e9resse.\",   \"131\": \"La\\nt\u00e2che g\u00e9n\u00e9rale d\u2019apprentissage d\u2019une loi de probabilit\u00e9s \u00e0 partir de donn\u00e9es\\nest un des probl\u00e8mes fondamentaux des statistiques, souvent appel\u00e9 esti-\\nmation de densit\u00e9 . L\u2019un des avantages de cette approche est qu\u2019elle permet\\nsouvent d\u2019\u00eatre capable de g\u00e9n\u00e9rer de nouvelles \\\"fausses\\\" donn\u00e9es apr\u00e8s\\nla phase d\u2019apprentissage, c\u2019est pourquoi l\u2019on parle de mod\u00e8les g\u00e9n\u00e9ratifs .\",   \"132\": \"La g\u00e9n\u00e9ration",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_110",
+      "length": 498
+    }
+  },
+  "110": {
+    "content": "de nouvelles donn\u00e9es syth\u00e9tiques est en effet utile dans de\\n il s\u2019agit\\nd\u2019apprendre une partition de l\u2019espace dans lequel vivent les don-\\nn\u00e9es, a\ufb01n de pouvoir les grouper en classes homog\u00e8nes; \u2014en apprentissage par renforcement, il s\u2019agit d\u2019apprendre une fonc-\\ntion qui \u00e0 chaque situation pr\u00e9conise une action \u00e0 entreprendre\\n(par exemple dans le cas d\u2019un algorithme de jeu d\u2019\u00e9checs).\",   \"133\": \"Dans tous ces cadres, les fonctions \u00e0 apprendre d\u00e9pendent de la loi de pro-\\nbabilit\u00e9 (inconnue) des",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_111",
+      "length": 500
+    }
+  },
+  "111": {
+    "content": "donn\u00e9es observ\u00e9es. Une approche g\u00e9n\u00e9rale serait\\ndonc d\u2019apprendre dans un premier temps cette loi de probabilit\u00e9, puis de\\nl\u2019utiliser a\ufb01n de r\u00e9soudre le probl\u00e8me sp\u00e9ci\ufb01que qui nous int\u00e9resse. La\\nt\u00e2che g\u00e9n\u00e9rale d\u2019apprentissage d\u2019une loi de probabilit\u00e9s \u00e0 partir de donn\u00e9es\\nest un des probl\u00e8mes fondamentaux des statistiques, souvent appel\u00e9 esti-\\nmation de densit\u00e9 .\",   \"134\": \"L\u2019un des avantages de cette approche est qu\u2019elle permet\\nsouvent d\u2019\u00eatre capable de g\u00e9n\u00e9rer de nouvelles \\\"fausses\\\"",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_112",
+      "length": 495
+    }
+  },
+  "112": {
+    "content": "donn\u00e9es apr\u00e8s\\nla phase d\u2019apprentissage, c\u2019est pourquoi l\u2019on parle de mod\u00e8les g\u00e9n\u00e9ratifs .\",   \"135\": \"La g\u00e9n\u00e9ration de nouvelles donn\u00e9es syth\u00e9tiques est en effet utile dans de\\nnombreux cadres :\\n\u2014elle peut nous permettre de juger si le mod\u00e8le que l\u2019on a appris\\nest bon : en effet, si les nouvelles donn\u00e9es sont tr\u00e8s diff\u00e9rentes\\nde la base de donn\u00e9es originales, cela falsi\ufb01era le mod\u00e8le et nous\\nencouragera \u00e0 l\u2019am\u00e9liorer;\\n\u2014dans certains cas applicatifs, la g\u00e9n\u00e9ration de nouvelles donn\u00e9es\\nest",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_113",
+      "length": 499
+    }
+  },
+  "113": {
+    "content": "un objectif en soi (par exemple, la g\u00e9n\u00e9ration de nouvelles\\nmol\u00e9cules en m\u00e9decine [10]);\\n\u2014si certaines donn\u00e9es sont incompl\u00e8tes, un mod\u00e8le g\u00e9n\u00e9ratif peut\\npermettre des les compl\u00e9ter (voir par exemple [13]).1.4.\",   \"136\": \"Mod\u00e8les g\u00e9n\u00e9ratifs et apprentissage statistique xvii\\nEn guise d\u2019exemple \ufb01l rouge, nous nous baserons sur une base de don-\\nn\u00e9es tr\u00e8s classique appel\u00e9e MNIST1. MNIST est constitu\u00e9e de 60000 images\\nde chiffres calligraphi\u00e9s de 28\u21e528pixels. Pour simpli\ufb01er, on",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_114",
+      "length": 484
+    }
+  },
+  "114": {
+    "content": "consid\u00e8rera\\nune version binaris\u00e9e de ces images, o\u00f9 chaque pixel ne peut prendre que\\nles valeurs 0ou1. Les donn\u00e9es vivent donc dans {0,1}28\u21e528, et suivront\\ndonc une loi inconnue sur cet espace discret.\",   \"137\": \"Quelques num\u00e9ros de cette\\nbase de donn\u00e9es sont montr\u00e9s sur la Figure 1.2. 1.4.1 Apprentissage par maximum de vraisemblance On suppose avoir affaire \u00e0 des donn\u00e9es x1,...,xn2Xo\u00f9Xest un\\nespace \u00e9quip\u00e9 d\u2019une mesure de r\u00e9f\u00e9rence (par exemple la mesure de Le-\\nbesgue si les donn\u00e9es sont",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_115",
+      "length": 499
+    }
+  },
+  "115": {
+    "content": "continues, ou la mesure de comptage si elles\\nsont discr\u00e8tes, comme dans notre exemple \ufb01l rouge).\",   \"138\": \"On suppose que ces\\nx1,...,xnsont autant de r\u00e9alisations ind\u00e9pendantes et indentiquement dis-\\ntribu\u00e9es (i.i.d.) d\u2019une variable al\u00e9atoire X, admettant une densit\u00e9 pdonn\u00e9es\\nvis-\u00e0-vis de notre mesure de r\u00e9f\u00e9rence. La densit\u00e9 pdonn\u00e9es est inconnue, et\\nnous souhaitons l\u2019approximer \u00e0 l\u2019aide d\u2019un mod\u00e8le param\u00e9trique , \u00e0 savoir une\\nfamille de densit\u00e9s (pq)q2Q, index\u00e9e par un ensemble appel\u00e9",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_116",
+      "length": 499
+    }
+  },
+  "116": {
+    "content": "ensemble des\\nparam\u00e8tres (g\u00e9n\u00e9ralement inclus dans un espace vectoriel de dimension\\n\ufb01nie).\",   \"139\": \"L\u2019id\u00e9e serait donc d\u2019utiliser nos donn\u00e9es a\ufb01n de trouver un bq2Qtel\\nquepbq\u21e1pdonn\u00e9es . Cette t\u00e2che, g\u00e9n\u00e9ralement appel\u00e9e estimation statistique ,\\npeut \u00eatre effectu\u00e9e de bien des mani\u00e8res, selon le choix du sens que l\u2019on\\nsouhaite donner \u00e0 l\u2019assertion \\\" pbq\u21e1pdonn\u00e9es \\\". Nous allons nous concentrer\\nici sur l\u2019exemple le plus connu de technique d\u2019estimation, \u00e0 savoir l\u2019esti-\\nmation par maximum",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_117",
+      "length": 500
+    }
+  },
+  "117": {
+    "content": "de vraisemblance , introduite par Fisher au d\u00e9but du\\nsi\u00e8cle dernier.\",   \"140\": \"Parmi les m\u00e9thodes concurrent\\n notre exemple \ufb01l rouge). On suppose que ces\\nx1,...,xnsont autant de r\u00e9alisations ind\u00e9pendantes et indentiquement dis-\\ntribu\u00e9es (i.i.d.) d\u2019une variable al\u00e9atoire X, admettant une densit\u00e9 pdonn\u00e9es\\nvis-\u00e0-vis de notre mesure de r\u00e9f\u00e9rence.\",   \"141\": \"La densit\u00e9 pdonn\u00e9es est inconnue, et\\nnous souhaitons l\u2019approximer \u00e0 l\u2019aide d\u2019un mod\u00e8le param\u00e9trique , \u00e0 savoir une\\nfamille de densit\u00e9s",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_118",
+      "length": 500
+    }
+  },
+  "118": {
+    "content": "(pq)q2Q, index\u00e9e par un ensemble appel\u00e9 ensemble des\\nparam\u00e8tres (g\u00e9n\u00e9ralement inclus dans un espace vectoriel de dimension\\n\ufb01nie). L\u2019id\u00e9e serait donc d\u2019utiliser nos donn\u00e9es a\ufb01n de trouver un bq2Qtel\\nquepbq\u21e1pdonn\u00e9es .\",   \"142\": \"Cette t\u00e2che, g\u00e9n\u00e9ralement appel\u00e9e estimation statistique ,\\npeut \u00eatre effectu\u00e9e de bien des mani\u00e8res, selon le choix du sens que l\u2019on\\nsouhaite donner \u00e0 l\u2019assertion \\\" pbq\u21e1pdonn\u00e9es \\\". Nous allons nous concentrer\\nici sur l\u2019exemple le plus connu de technique",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_119",
+      "length": 489
+    }
+  },
+  "119": {
+    "content": "d\u2019estimation, \u00e0 savoir l\u2019esti-\\nmation par maximum de vraisemblance , introduite par Fisher au d\u00e9but du\\nsi\u00e8cle dernier.\",   \"143\": \"Parmi les m\u00e9thodes concurrentes, les m\u00e9thodes bay\u00e9siennes\\n(d\u00e9taill\u00e9es par exemple dans le livres de Robert [ 19]) sont historiquement\\nles plus importantes.\\nLa question principale permettant d\u2019\u00e9tablir une technique d\u2019inf\u00e9rence\\nest donc : \\\"quel sens donner \u00e0 pbq\u21e1pdonn\u00e9es ?\\\". Une id\u00e9e naturelle serait de\\nse donner une distance dsur l\u2019ensemble des densit\u00e9s, puis",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_120",
+      "length": 500
+    }
+  },
+  "120": {
+    "content": "de choisir\\nbq2argminq2Qd(pq,pdonn\u00e9es ).\",   \"144\": \"(1.2)\\nCette id\u00e9e se heurte \u00e0 un \u00e9cueil important : nous ne connaissons pas\\npdonn\u00e9es , donc nous ne pourrons certainement pas minimiser la fonction\\nq7!d(pbq,pdonn\u00e9es ). En revanche, nous avons acc\u00e8s \u00e0 ntirages i.i.d. de\\npdonn\u00e9es : notre jeu de donn\u00e9es x1,...,xn. Tout le jeu va consister \u00e0 trouver\\n1. http ://yann.lecun.com/exdb/mnist/xviii Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\\nun moyen d\u2019utiliser ces donn\u00e9es pour r\u00e9soudre approximativement",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_121",
+      "length": 499
+    }
+  },
+  "121": {
+    "content": "le pro-\\nbl\u00e8me (1.2).\",   \"145\": \"C\u2019est ici que le choix de la distance peut faire toute la diff\u00e9rence :\\npour certaines distances, les choses seront en effet plus simples que pour\\nd\u2019autres. Le maximum de vraisemblance correspond \u00e0 une notion distance\\nissue de la th\u00e9orie de l\u2019information : la divergence de Kullback-Leibler . D\u00e9\ufb01nition 1.4.1. Soient p1etp2deux densit\u00e9s sur Xtelles que le support de p1\\nest inclus dans le support de p2.\",   \"146\": \"La divergence de Kullback-Leibler entre",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_122",
+      "length": 492
+    }
+  },
+  "122": {
+    "content": "p1etp2\\nest la quantit\u00e9\\nKL(p1,p2)=Z\\nXlog\u2713p1(x)\\np2(x)\u25c6\\np1(x)dx=EX\u21e0p1\uf8ff\\nlog\u2713p1(X)\\np2(X)\u25c6\\u0000\\n. (1.3)\\nMalheureusement, la divergence de Kullback-Leibler n\u2019est pas une\\nv\u00e9ritable distance sur l\u2019espace des densit\u00e9s. En effet, l\u2019axiome de sym\u00e9trie\\nest viol\u00e9 car on n\u2019a pas, en g\u00e9n\u00e9ral, KL(p1,p2)= KL(p2,p1). le cas gaussien,\\npour lequel la divergence a une forme explicite, produit d\u00e9j\u00e0 un exemple\\nde cette asymm\u00e9trie.\\nProposition 1.4.2.\",   \"147\": \"Pour tous \u00b51,\u00b522R, ets1,s2, on",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_123",
+      "length": 487
+    }
+  },
+  "123": {
+    "content": "a\\nKL(N(\u00b51,s1),N(\u00b52,s2)) = logs2\\ns1+s2\\n1+(\u00b51\\u0000\u00b52)2\\n2s2\\n2\\u00001\\n2. (1.4)\\nSi elle n\u2019est pas une distance, la divergence de Kullback-Leibler pos-\\ns\u00e8de tout de m\u00eame un certain nombre de bonnes propri\u00e9t\u00e9s, r\u00e9sum\u00e9es dans\\nla proposition suivante.\\nProposition 1.4.3. Soient p1etp2deux densit\u00e9s sur Xtelles que le\\n(p1,p2)=Z\\nXlog\u2713p1(x)\\np2(x)\u25c6\\np1(x)dx=EX\u21e0p1\uf8ff\\nlog\u2713p1(X)\\np2(X)\u25c6\\u0000\\n.\",   \"148\": \"(1.3)\\nMalheureusement, la divergence de Kullback-Leibler n\u2019est pas une\\nv\u00e9ritable distance",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_124",
+      "length": 497
+    }
+  },
+  "124": {
+    "content": "sur l\u2019espace des densit\u00e9s. En effet, l\u2019axiome de sym\u00e9trie\\nest viol\u00e9 car on n\u2019a pas, en g\u00e9n\u00e9ral, KL(p1,p2)= KL(p2,p1). le cas gaussien,\\npour lequel la divergence a une forme explicite, produit d\u00e9j\u00e0 un exemple\\nde cette asymm\u00e9trie.\\nProposition 1.4.2. Pour tous \u00b51,\u00b522R, ets1,s2, on a\\nKL(N(\u00b51,s1),N(\u00b52,s2)) = logs2\\ns1+s2\\n1+(\u00b51\\u0000\u00b52)2\\n2s2\\n2\\u00001\\n2.\",   \"149\": \"(1.4)\\nSi elle n\u2019est pas une distance, la divergence de Kullback-Leibler pos-\\ns\u00e8de tout de m\u00eame un certain nombre de bonnes",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_125",
+      "length": 495
+    }
+  },
+  "125": {
+    "content": "propri\u00e9t\u00e9s, r\u00e9sum\u00e9es dans\\nla proposition suivante.\\nProposition 1.4.3. Soient p1etp2deux densit\u00e9s sur Xtelles que le support de\\np1est inclus dans le support de p 2. On a\\n1.KL(p1,p2)>0,\\n2.KL(p1,p2)= 0()p1=p2.\",   \"150\": \"Ces bonnes propri\u00e9t\u00e9s \u00e9tant essentiellement des cons\u00e9quences de l\u2019in-\\n\u00e9galit\u00e9 de Jensen, il parait naturel de se dire que l\u2019on pourrait remplacer la\\nfonction logarithme par une autre fonction convexe. Ce type de g\u00e9n\u00e9ralisa-\\ntion est \u00e0 la base de la notion de f-divergences.",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_126",
+      "length": 500
+    }
+  },
+  "126": {
+    "content": "Cependant, le logarithme\\ndispose d\u2019une autre qualit\u00e9 qui sera (comme on va bient\u00f4t le voir) fon-\\ndamentale : sa propri\u00e9t\u00e9 de morphisme vis-\u00e0-vis de l\u2019addition et de la\\nmultiplication.\",   \"151\": \"Cette propri\u00e9t\u00e9 explique la place centrale tenue par la di-\\nvergence de Kullback-Leibler au sein des (pseudo)distances entre lois de\\nprobabilit\u00e9s.1.4. Mod\u00e8les g\u00e9n\u00e9ratifs et apprentissage statistique xix\\nRevenons \u00e0 notre probl\u00e8me d\u2019 estimation statistique. On s\u2019int\u00e9resse\\n\u00e0 minimiser KL(pdonn\u00e9es",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_127",
+      "length": 497
+    }
+  },
+  "127": {
+    "content": ",pq).\",   \"152\": \"En utilisant la propri\u00e9t\u00e9 de morphisme du\\nlogarithme, on peut r\u00e9\u00e9crire\\nKL(pdonn\u00e9es ,pq)=EX\u21e0pdonn\u00e9es\uf8ff\\nlog\u2713pdonn\u00e9es (X)\\npq(X)\u25c6\\u0000\\n(1.5)\\n=EX\u21e0pdonn\u00e9es [logpdonn\u00e9es (X)]\\u0000EX\u21e0pdonn\u00e9es [logpq(X)].\\n(1.6)\\nOn remarque alors que le premier terme de cette somme ne d\u00e9pend pas de\\nq, par cons\u00e9quent\\nargminq2QKL(pdonn\u00e9es ,pq)=argmaxq2QEX\u21e0pdonn\u00e9es [ logpq(X)]. (1.7)\\nLes choses ont alors \u00e9t\u00e9 consid\u00e9rablement simpli\ufb01\u00e9es. En effet, on peut utili-\\nser notre jeu de donn\u00e9es pour",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_128",
+      "length": 496
+    }
+  },
+  "128": {
+    "content": "approcher l\u2019esp\u00e9rance EX\u21e0\",   \"153\": \"pdonn\u00e9es [logpq(X)]\\npar Monte Carlo :\\nEX\u21e0pdonn\u00e9es [ logpq(X)]\u21e11\\nnn\\n\u00c2\\ni=1logpq(xi) . (1.8)\\nLes donn\u00e9es \u00e9tant suppos\u00e9es \u00eatre des r\u00e9alisations i.i.d. de densit\u00e9 pdonn\u00e9es , la\\nloi des grands nombres garantira la justesse asymptotique de cette approxi-\\nmation. Ce raisonnement motive la d\u00e9\ufb01nition de la fonction de vraisemblance\\ndes donn\u00e9es :\\n`:q7!n\\n\u00c2\\ni=1logpq(xi). (1.9)\\nL\u2019estimateur du maximum de vraisemblance sera alors\\nbqMV2argmaxq2Q`(q).",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_129",
+      "length": 490
+    }
+  },
+  "129": {
+    "content": "(1.10)\\nOn aimerait id\u00e9alement que bqMVapproche\",   \"154\": \"la solution de (1.2) quand nest\\ngrand. La question principale quant \u00e0 la qualit\u00e9 de l\u2019estimateur du maxi-\\nmum de vraisemblance est alors : qu\u2019a-t-on perdu lors de l\u2019approximation\\nde Monte Carlo (1.8\\nmaxq2QEX\u21e0 pdonn\u00e9es [ logpq(X)]. (1.7)\\nLes choses ont alors \u00e9t\u00e9 consid\u00e9rablement simpli\ufb01\u00e9es. En effet, on peut utili-\\nser notre jeu de donn\u00e9es pour approcher l\u2019esp\u00e9rance EX\u21e0 pdonn\u00e9es [logpq(X)]\\npar Monte Carlo :\\nEX\u21e0pdonn\u00e9es [",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_130",
+      "length": 491
+    }
+  },
+  "130": {
+    "content": "logpq(X)]\u21e11\\nnn\\n\u00c2\\ni=1logpq(xi) .\",   \"155\": \"(1.8)\\nLes donn\u00e9es \u00e9tant suppos\u00e9es \u00eatre des r\u00e9alisations i.i.d. de densit\u00e9 pdonn\u00e9es , la\\nloi des grands nombres garantira la justesse asymptotique de cette approxi-\\nmation. Ce raisonnement motive la d\u00e9\ufb01nition de la fonction de vraisemblance\\ndes donn\u00e9es :\\n`:q7!n\\n\u00c2\\ni=1logpq(xi). (1.9)\\nL\u2019estimateur du maximum de vraisemblance sera alors\\nbqMV2argmaxq2Q`(q). (1.10)\\nOn aimerait id\u00e9alement que bqMVapproche la solution de (1.2) quand nest\\ngrand.\",",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_131",
+      "length": 500
+    }
+  },
+  "131": {
+    "content": "\"156\": \"La question principale quant \u00e0 la qualit\u00e9 de l\u2019estimateur du maxi-\\nmum de vraisemblance est alors : qu\u2019a-t-on perdu lors de l\u2019approximation\\nde Monte Carlo (1.8)? C\u2019est l\u2019objet de la statistique asymptotique, expos\u00e9e\\npar exemple dans le livre classique de Van der Vaart [27].\\nAu del\u00e0 de son interpr\u00e9tation \u00e0 l\u2019aide de la divergence de Kullback-\\nLeibler, la m\u00e9thode du maximum de vraisemblance peut \u00eatre justi\ufb01\u00e9e par\\nle fait qu\u2019on choisit le param\u00e8tre qui maximise la probabilit\u00e9 des",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_132",
+      "length": 495
+    }
+  },
+  "132": {
+    "content": "donn\u00e9es.\",   \"157\": \"Cette justi\ufb01cation est en fait la motivation historique principale de cette\\nm\u00e9thode. Une analyse historique int\u00e9ressante du d\u00e9veloppelment du maxi-\\nmum de vraisemblance a \u00e9t\u00e9 r\u00e9alis\u00e9e par Stiegler [23].xx Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs 1.5 Mod\u00e8les profonds \u00e0 variables latentes La contrainte principale pos\u00e9e par la m\u00e9thode du maximum de vrai-\\nsemblance est la n\u00e9cessit\u00e9 d\u2019\u00eatre capable d\u2019\u00e9valuer et d\u2019optimiser la densit\u00e9\\ndes donn\u00e9es selon notre mod\u00e8le.\",   \"158\":",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_133",
+      "length": 495
+    }
+  },
+  "133": {
+    "content": "\"Cela restreint consid\u00e9rablement le choix\\ndes mod\u00e8les probabilistes pouvant \u00eatre utilis\u00e9s. Nous allons pr\u00e9senter\\nici une famille de mod\u00e8les n\u2019ob\u00e9issant pas \u00e0 cette contrainte (les mod\u00e8les\\nprofonds \u00e0 variables latentes ). Bien que leur vraisemblance ne soit pas cal-\\nculable ais\u00e9ment, ces mod\u00e8les peuvent \u00eatre entra\u00een\u00e9s par maximum de\\nvraisemblance approch\u00e9, via une m\u00e9thode tr\u00e8s g\u00e9n\u00e9rale appel\u00e9e inf\u00e9rence\\nvariationnelle .\",   \"159\": \"On s\u2019int\u00e9ressera en particulier \u00e0 une version r\u00e9cente de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_134",
+      "length": 497
+    }
+  },
+  "134": {
+    "content": "l\u2019inf\u00e9-\\nrence variationnelle, appel\u00e9e inf\u00e9rence variationelle par \u00e9chantillonnage\\npr\u00e9f\u00e9rentiel ( importance weighted variational inference ), introduite par Burda,\\nGrosse et Salakhutdinov [2].\\n1.5.1 Mod\u00e8les lin\u00e9aires \u00e0 variables latentes\\nL\u2019id\u00e9e g\u00e9n\u00e9rale des mod\u00e8les \u00e0 variables latentes est la suivante :\",   \"160\": \"bien\\nque les donn\u00e9es vivent g\u00e9n\u00e9ralement dans un espace de grande dimension\\n(dans le cas d\u2019images en niveaux de gris, la dimension est le nombre de\\npixels), on suppose qu\u2019un",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_135",
+      "length": 498
+    }
+  },
+  "135": {
+    "content": "faible nombre de \\\"facteurs\\\" cach\u00e9s expliquent rai-\\nsonnablement bien la diversit\u00e9 des donn\u00e9es.\",   \"161\": \"Avant de formaliser ce postulat\\nd\u2019existence de facteurs cach\u00e9s, donnons quelques exemples concrets :\\n\u2014si les donn\u00e9es sont des images de grains de beaut\u00e9 ou potentiel\\nm\u00e9lanomes, savoir une poign\u00e9e d\u2019informations cl\u00e9s (la taille de\\nla tache, sa rotondit\u00e9, la couleur de peau, ...) sera suf\ufb01sant pour\\nr\u00e9sumer l\u2019image sans perte d\u2019information;\\n\u2014il en est de m\u00eame si les donn\u00e9es sont des",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_136",
+      "length": 498
+    }
+  },
+  "136": {
+    "content": "images de visages : dans\\nce cas, les facteurs pourraient \u00eatre la pilosit\u00e9, la couleur de peau, la\\npr\u00e9sence de lunettes;\\n\u2014si les donn\u00e9es sont des textes, conna\u00eetre le th\u00e8me, le ton et le style\\ndu texte peut permettre d\u2019en avoir une id\u00e9e assez pr\u00e9cise.\",   \"162\": \"La variable latente sera g\u00e9n\u00e9ralement vue comme une repr\u00e9sent\\n1.5.1 Mod\u00e8les lin\u00e9aires \u00e0 variables latentes\\nL\u2019id\u00e9e g\u00e9n\u00e9rale des mod\u00e8les \u00e0 variables latentes est la suivante : bien\\nque les donn\u00e9es vivent g\u00e9n\u00e9ralement dans un espace",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_137",
+      "length": 499
+    }
+  },
+  "137": {
+    "content": "de grande dimension\\n(dans le cas d\u2019images en niveaux de gris, la dimension est le nombre de\\npixels), on suppose qu\u2019un faible nombre de \\\"facteurs\\\" cach\u00e9s expliquent rai-\\nsonnablement bien la diversit\u00e9 des donn\u00e9es.\",   \"163\": \"Avant de formaliser ce postulat\\nd\u2019existence de facteurs cach\u00e9s, donnons quelques exemples concrets :\\n\u2014si les donn\u00e9es sont des images de grains de beaut\u00e9 ou potentiel\\nm\u00e9lanomes, savoir une poign\u00e9e d\u2019informations cl\u00e9s (la taille de\\nla tache, sa rotondit\u00e9, la couleur",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_138",
+      "length": 498
+    }
+  },
+  "138": {
+    "content": "de peau, ...) sera suf\ufb01sant pour\\nr\u00e9sumer l\u2019image sans perte d\u2019information;\\n\u2014il en est de m\u00eame si les donn\u00e9es sont des images de visages : dans\\nce cas, les facteurs pourraient \u00eatre la pilosit\u00e9, la couleur de peau, la\\npr\u00e9sence de lunettes;\\n\u2014si les donn\u00e9es sont des textes, conna\u00eetre le th\u00e8me, le ton et le style\\ndu texte peut permettre d\u2019en avoir une id\u00e9e assez pr\u00e9cise.\",   \"164\": \"La variable latente sera g\u00e9n\u00e9ralement vue comme une repr\u00e9sentation synth\u00e9-\\ntique des donn\u00e9es , et vivra \u00e0 ce",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_139",
+      "length": 496
+    }
+  },
+  "139": {
+    "content": "titre souvent dans un espace (ou une vari\u00e9t\u00e9)\\nde dimension plus faible que celui des donn\u00e9es. On d\u00e9signera parfois la\\nvariable latente sous le nom de code ou de facteurs . A\ufb01n de mettre cette id\u00e9e g\u00e9n\u00e9rale en pratique\",   \"165\": \", les mod\u00e8les \u00e0 variables\\nlatentes supposent l\u2019existence de variables al\u00e9atoire latentes z2Z, qui\\npermettent d\u2019expliquer nos donn\u00e9es x2X. On aimerait donc formaliser\\nl\u2019id\u00e9e que \\\" zexplique x\\\". Pour ce faire, les mod\u00e8les \u00e0 variables latentes\\npostuleront que la",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_140",
+      "length": 497
+    }
+  },
+  "140": {
+    "content": "loi de xsachant zest une loi \\\"simple\\\", par exemple une1.5. Mod\u00e8les profonds \u00e0 variables latentes xxi\\nloi gaussienne (dans le cas de donn\u00e9es continues), ou un produit de lois de\\nBernoulli (dans le cas de notre exemple \ufb01l-rouge).\",   \"166\": \"Analyse factorielle Il s\u2019agit du plus ancien exemple de mod\u00e8le \u00e0 variable\\nlatente (voir par exemple J\u00f6reskog [ 8]), pour lequel les donn\u00e9es sont conti-\\nnues ( X=Rd), et expliqu\u00e9es par un code de faible dimension ( Z=Rq\\navec q\u2327d). Ici, la variable",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_141",
+      "length": 493
+    }
+  },
+  "141": {
+    "content": "latente et les donn\u00e9es sont gaussiennes, et une\\nfonction af\ufb01ne z7!Wz+bpermet de les lier :\\n\u21e2z\u21e0N(0,Id)\\nx\u21e0N(Wz+\u00b5,S).(1.11)\",   \"167\": \"Les param\u00e8tres inconnus du mod\u00e8le sont W2Rd\u21e5q,\u00b52Rq, etS2S++\\nd,\\no\u00f9S++\\ndd\u00e9signe le c\u00f4ne des matrices d\u00e9\ufb01nies positives de taille q\u21e5q. Ces\\nderniers peuvent \u00eatre estim\u00e9s par maximum de vraisemblance. En effet,\\nla vraisemblance est ais\u00e9e \u00e0 calculer, et peut \u00eatre maximis\u00e9e en utilisant\\npar exemple une m\u00e9thode de gradient.\",   \"168\": \"Le mod\u00e8le d\u2019analyse",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_142",
+      "length": 491
+    }
+  },
+  "142": {
+    "content": "factorielle a\\nune interpr\u00e9tation g\u00e9om\u00e9trique simple : les donn\u00e9es, bien que de grande\\ndimension d, sont proches d\u2019un sous-espace af\ufb01ne de faible dimension\\nq\u2327d, \u00e0 savoir l\u2019image de Rdpar la fonction z7!Wz+b. Le cas particulier\\no\u00f9Sest proportionnelle \u00e0 l\u2019identit\u00e9 a \u00e9t\u00e9 \u00e9tudi\u00e9 en d\u00e9tail par Tipping et\\nBishop [ 25], qui ont appel\u00e9 ce mod\u00e8le particulier analyse en composantes\\nprincipales probabiliste (ACPP) .\",   \"169\": \"Pour l\u2019ACPP, le maximum de vraisemblance\\nde tous les param\u00e8tres peut \u00eatre",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_143",
+      "length": 500
+    }
+  },
+  "143": {
+    "content": "obtenu directement en effectuant une\\nd\u00e9composition en valeurs singuli\u00e8res de la matrice des donn\u00e9es, sans avoir\\nrecours \u00e0 un algorithme d\u2019optimisation. Donn\u00e9es non-euclidiennes Si l\u2019analyse factorielle et ses variations sont\\nadapt\u00e9es au cas de donn\u00e9es vivant dans un espace euclidien Rd, il n\u2019est\\npas conceptuellement dif\\n positives de taille q\u21e5q. Ces\\nderniers peuvent \u00eatre estim\u00e9s par maximum de vraisemblance.\",   \"170\": \"En effet,\\nla vraisemblance est ais\u00e9e \u00e0 calculer, et peut \u00eatre",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_144",
+      "length": 492
+    }
+  },
+  "144": {
+    "content": "maximis\u00e9e en utilisant\\npar exemple une m\u00e9thode de gradient. Le mod\u00e8le d\u2019analyse factorielle a\\nune interpr\u00e9tation g\u00e9om\u00e9trique simple : les donn\u00e9es, bien que de grande\\ndimension d, sont proches d\u2019un sous-espace af\ufb01ne de faible dimension\\nq\u2327d, \u00e0 savoir l\u2019image de Rdpar la fonction z7!Wz+b.\",   \"171\": \"Le cas particulier\\no\u00f9Sest proportionnelle \u00e0 l\u2019identit\u00e9 a \u00e9t\u00e9 \u00e9tudi\u00e9 en d\u00e9tail par Tipping et\\nBishop [ 25], qui ont appel\u00e9 ce mod\u00e8le particulier analyse en composantes\\nprincipales probabiliste",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_145",
+      "length": 497
+    }
+  },
+  "145": {
+    "content": "(ACPP) . Pour l\u2019ACPP, le maximum de vraisemblance\\nde tous les param\u00e8tres peut \u00eatre obtenu directement en effectuant une\\nd\u00e9composition en valeurs singuli\u00e8res de la matrice des donn\u00e9es, sans avoir\\nrecours \u00e0 un algorithme d\u2019optimisation. Donn\u00e9es non-euclidiennes\",   \"172\": \"Si l\u2019analyse factorielle et ses variations sont\\nadapt\u00e9es au cas de donn\u00e9es vivant dans un espace euclidien Rd, il n\u2019est\\npas conceptuellement dif\ufb01cile de les \u00e9tendre \u00e0 des cas plus complexes, en\\nrempla\u00e7ant simplement la",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_146",
+      "length": 496
+    }
+  },
+  "146": {
+    "content": "gaussienne N(Wz+b,S)par une loi adapt\u00e9e\\n\u00e0 l\u2019espace qui nous int\u00e9resse.\",   \"173\": \"Par exemple, si les donn\u00e9es sont des vec-\\nteurs d\u2019entiers, vivant donc dans Nd, on pourrait remplacer la gaussienne\\nmultivari\u00e9e par un produit de lois de Poisson P, et consid\u00e9rer ainsi le\\nmod\u00e8le \u21e2z\u21e0N(0,Id)\\nx\u21e0\u2019d\\nj=1P(exp([Wz+b]j)).(1.12)\\nLa pr\u00e9sence de la fonction exponentielle permet de s\u2019assurer que le para-\\nm\u00e8tre de la loi de Poisson sera bien strictement positif. Ce type de mod\u00e8le\\na par exemple \u00e9t\u00e9",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_147",
+      "length": 496
+    }
+  },
+  "147": {
+    "content": "employ\u00e9 par Chiquet, Mariadassou et Robin [ 3] dans\\nle cadre de mod\u00e8les d\u2019\u00e9cologie microbienne.\",   \"174\": \"Revenons un instant \u00e0 notrexxii Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\\nexemple \ufb01l -rouge des images binaris\u00e9es. Ici, les donn\u00e9es vivent dans un\\nensemble discret {0,1}d. Un choix naturel est alors d\u2019utiliser un produit de\\nlois de Bernoulli :\\n\u21e2z\u21e0N(0,Id)\\nx\u21e0\u2019d\\nj=1B(sigmo\u00efde ([Wz+b]j)).(1.13)\\nIci, la fonction sigmo\u00efde : t7!1/(1\\u0000e\\u0000t)se charge de contraindre le\\nparam\u00e8tre de la",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_148",
+      "length": 497
+    }
+  },
+  "148": {
+    "content": "loi de Bernoulli a \u00eatre bien entre 0et1.\",   \"175\": \"En effet, on a\\nsigmo\u00efde (R)= ] 0, 1[.\\n(Ind\u00e9)pendance des variables observ\u00e9es Dans le cas du mod\u00e8le (1.12)\\nadapt\u00e9 aux vecteurs d\u2019entiers comme dans celui des images binaires (1.13) ,\\nle fait que la loi de xsachant zsoit mod\u00e9lis\u00e9e par un produit de lois\\nsimples implique que, conditionnellement \u00e0 z, les coordonn\u00e9es de xsont\\nind\u00e9pendantes :\\nx1??x2??...??xd|z. (1.14)\\nEn revanche, si l\u2019on ne conditionne pas \u00e0 z, lesx1,...,xdne sont plus",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_149",
+      "length": 495
+    }
+  },
+  "149": {
+    "content": "ind\u00e9-\\npendants!\",   \"176\": \"Cela illustre le fait g\u00e9n\u00e9ral que la loi de x|zpeut \u00eatre tr\u00e8s simple,\\ntandis que celle de xdemeure complexe. 1.5.2 Mod\u00e8les profonds \u00e0 variables latentes\\nLes mod\u00e8les pr\u00e9c\u00e9dents sont limit\u00e9s par le fait que la fonction envoyant\\nle code zvers la loi de x|zest essentiellement lin\u00e9aire. Une g\u00e9n\u00e9ralisation\\nnaturelle serait alors de remplacer cette fonction lin\u00e9aire par une fonction\\nplus g\u00e9n\u00e9rale, par exemple param\u00e9tr\u00e9e par un r\u00e9seau de neurones. Ansi,\\nnotre mod\u00e8le d\u2019",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_150",
+      "length": 500
+    }
+  },
+  "150": {
+    "content": "analyse factorielle\\n\u21e2z\u21e0N(0,Id)\",   \"177\": \"x\u21e0N(Wz+b,S).(1.15)\\nsera remplac\u00e9 par un mod\u00e8le du type\\n des variables observ\u00e9es Dans le cas du mod\u00e8le (1.12)\\nadapt\u00e9 aux vecteurs d\u2019entiers comme dans celui des images binaires (1.13) ,\\nle fait que la loi de xsachant zsoit mod\u00e9lis\u00e9e par un produit de lois\\nsimples implique que, conditionnellement \u00e0 z, les coordonn\u00e9es de xsont\\nind\u00e9pendantes :\\nx1??x2??...??xd|z. (1.14)\\nEn revanche, si l\u2019on ne conditionne pas \u00e0 z, lesx1,...,xdne sont plus",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_151",
+      "length": 489
+    }
+  },
+  "151": {
+    "content": "ind\u00e9-\\npendants!\",   \"178\": \"Cela illustre le fait g\u00e9n\u00e9ral que la loi de x|zpeut \u00eatre tr\u00e8s simple,\\ntandis que celle de xdemeure complexe. 1.5.2 Mod\u00e8les profonds \u00e0 variables latentes\\nLes mod\u00e8les pr\u00e9c\u00e9dents sont limit\u00e9s par le fait que la fonction envoyant\\nle code zvers la loi de x|zest essentiellement lin\u00e9aire. Une g\u00e9n\u00e9ralisation\\nnaturelle serait alors de remplacer cette fonction lin\u00e9aire par une fonction\\nplus g\u00e9n\u00e9rale, par exemple param\u00e9tr\u00e9e par un r\u00e9seau de neurones. Ansi,\\nnotre mod\u00e8le d\u2019",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_152",
+      "length": 500
+    }
+  },
+  "152": {
+    "content": "analyse factorielle\\n\u21e2z\u21e0N(0,Id)\",   \"179\": \"x\u21e0N(Wz+b,S).(1.15)\\nsera remplac\u00e9 par un mod\u00e8le du type\\n\u21e2z\u21e0N(0,Id)\\nx\u21e0N(\u00b5q(z),Sq(z)),(1.16)\\no\u00f9\u00b5q:Z\\u0000 ! RdetSq:Z\\u0000 ! S++\\ndsont des r\u00e9seaux de neurones, dont\\nles param\u00e8tres sont stock\u00e9s dans le vecteur q2Q.\\nPlus g\u00e9n\u00e9ralement, on appellera mod\u00e8le profond \u00e0 variables latentes un\\nmod\u00e8le du type\u21e2z\u21e0p\\nx\u21e0F(fq(z)),(1.17)1.5. Mod\u00e8les profonds \u00e0 variables latentes xxiii\\no\u00f9pest une loi de probabilit\u00e9s sur Zappel\u00e9e loi a priori ,(F(h))h2Eest",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_153",
+      "length": 491
+    }
+  },
+  "153": {
+    "content": "une\\nfamille param\u00e9tr\u00e9e de lois de probabilit\u00e9s sur X, etfq:Z\\u0000 !\",   \"180\": \"Eest un\\nr\u00e9seau de neurones param\u00e9tr\u00e9 par q2Q. La famille (F(h))h2Eest appel\u00e9e\\nmod\u00e8le d\u2019observation et le r\u00e9seau fqest appel\u00e9 decodeur our\u00e9seau g\u00e9n\u00e9ratif .\\nEn effet, son r\u00f4le est de transformer un code zen param\u00e8tres du mod\u00e8le\\nd\u2019observation, permettant par l\u00e0 m\u00eame de g\u00e9n\u00e9rer des \u00e9chantillons selon\\nle mod\u00e8le. Le fonctionnement g\u00e9n\u00e9ral de ce type de mod\u00e8le est pr\u00e9sent\u00e9\\n\ufb01gure 1.2.\",   \"181\": \"Ces mod\u00e8les sont",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_154",
+      "length": 496
+    }
+  },
+  "154": {
+    "content": "\u00e9galement connus sous le nom d\u2019autoencodeur\\nvariationnel, et ont \u00e9t\u00e9 introduits ind\u00e9pendamment par Rezende, Mohamed\\net Wiestra [18] et par Kingma et Welling [ 9]. V\u00e9ri\ufb01ons rapidement que cette construction g\u00e9n\u00e9rale contient bien\\nles mod\u00e8les lin\u00e9aires pr\u00e9sent\u00e9s pr\u00e9c\u00e9demment.\",   \"182\": \"On retrouve bien l\u2019analyse\\nfactorielle classique en prenant un a priori gaussien p=N(0,Iq), un mo-\\nd\u00e8le d\u2019observation gaussien (F(h))h=(N(\u00b5,S))\u00b5,Sainsi qu\u2019un d\u00e9codeur\\nlin\u00e9aire fq=(\u00b5q,Sq), avec \u00b5q(z)=",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_155",
+      "length": 492
+    }
+  },
+  "155": {
+    "content": "Wz+betSq(z)constante \u00e9gale \u00e0 S.\\nDans ce cas les param\u00e8tres du d\u00e9codeur sont donc q=(W,b,S).\",   \"183\": \"En choisis-\\nsant un mod\u00e8le d\u2019observation de produits de lois de Bernoulli ainsi qu\u2019un\\nd\u00e9codeur lin\u00e9aire, on retrouve \u00e9galement le mod\u00e8le (1.13).\\nTout l\u2019ind\u00e9r\u00eat est cependant d\u2019aller au del\u00e0 des mod\u00e8les lin\u00e9aires, en\\nutilisant plut\u00f4t des r\u00e9seaux profonds tels que d\u00e9crits plus haut. On pourrait\\npar exemple choisir un r\u00e9seau tel que celui de l\u2019\u00e9quation (1.1) :\\n\u00b5q(z)=W1sigmo\u00efde (W0z+b0)+b1,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_156",
+      "length": 500
+    }
+  },
+  "156": {
+    "content": "(1.18)\\ndans le cas du mod\u00e8le d\u2019observation gaussien.\",   \"184\": \"On pourrait \u00e9galement\\nutiliser un r\u00e9seau adapt\u00e9 \u00e0 l\u2019architecture de nos donn\u00e9es. Par exemple, si\\nles donn\u00e9es sont des images, on pourrait choisir un r\u00e9seau convolutif; si\\nles donn\u00e9es sont des textes, on pourrait choisir un r\u00e9seau r\u00e9current. On supposera dans le reste de ce chapitre que\\nien p=N(0,Iq), un mo-\\nd\u00e8le d\u2019observation gaussien (F(h))h=(N(\u00b5,S))\u00b5,Sainsi qu\u2019un d\u00e9codeur\\nlin\u00e9aire fq=(\u00b5q,Sq), avec \u00b5q(z)=",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_157",
+      "length": 481
+    }
+  },
+  "157": {
+    "content": "Wz+betSq(z)constante \u00e9gale \u00e0 S.\\nDans ce cas les param\u00e8tres du d\u00e9codeur sont donc q=(W,b,S).\",   \"185\": \"En choisis-\\nsant un mod\u00e8le d\u2019observation de produits de lois de Bernoulli ainsi qu\u2019un\\nd\u00e9codeur lin\u00e9aire, on retrouve \u00e9galement le mod\u00e8le (1.13).\\nTout l\u2019ind\u00e9r\u00eat est cependant d\u2019aller au del\u00e0 des mod\u00e8les lin\u00e9aires, en\\nutilisant plut\u00f4t des r\u00e9seaux profonds tels que d\u00e9crits plus haut. On pourrait\\npar exemple choisir un r\u00e9seau tel que celui de l\u2019\u00e9quation (1.1) :\\n\u00b5q(z)=W1sigmo\u00efde (W0z+b0)+b1,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_158",
+      "length": 500
+    }
+  },
+  "158": {
+    "content": "(1.18)\\ndans le cas du mod\u00e8le d\u2019observation gaussien.\",   \"186\": \"On pourrait \u00e9galement\\nutiliser un r\u00e9seau adapt\u00e9 \u00e0 l\u2019architecture de nos donn\u00e9es. Par exemple, si\\nles donn\u00e9es sont des images, on pourrait choisir un r\u00e9seau convolutif; si\\nles donn\u00e9es sont des textes, on pourrait choisir un r\u00e9seau r\u00e9current. On supposera dans le reste de ce chapitre que pa une densit\u00e9 p(z)\\nvis-\u00e0-vis d\u2019une certaine mesure de r\u00e9f\u00e9rence sur Z, et que, pour tout h,\\nF(h)a pour densit\u00e9 F(x|h)vis - \u00e0-vis d\u2019une mesure",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_159",
+      "length": 500
+    }
+  },
+  "159": {
+    "content": "de r\u00e9f\u00e9rence sur X.\",   \"187\": \"La\\ndensit\u00e9 conditionnelle de zsachant xsera donc pq(z|x)= F(x|fq(z)), et la\\nloi marginale des donn\u00e9es sera\\npq(x)=Z\\nXpq(x|z)p(z)dx=Z\\nXF(x|fq(z))p(z)dz. (1.19)\\nOn sera \u00e9galement amen\u00e9 \u00e0 regarder la densit\u00e9 de zsachant x, g\u00e9n\u00e9-\\nralement appel\u00e9e densit\u00e9 a posteriori , et qui vaut, d\u2019apr\u00e8s le th\u00e9or\u00e8me de\\nBayes\\npq(z|x)=pq(x|z)p(z)\\npq(x). (1.20)xxiv Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\",   \"188\": \"Cette densit\u00e9 a posteriori est fondamentale car elle permet",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_160",
+      "length": 495
+    }
+  },
+  "160": {
+    "content": "d\u2019encoder une\\ndonn\u00e9e x. En effet, la loi de z|xpourra \u00eatre vue comme une repr\u00e9senta-\\ntion d\u2019une certaine donn\u00e9e de grande dimension x. Notons cependant que\\nnotre repr\u00e9sentation de xpar sa loi a posteriori n\u2019est pas vraiment une\\nr\u00e9duction de dimension pour l\u2019instant. En effet, la repr\u00e9sentation z|xest\\nune loi de probabilit\u00e9s sur un espace de petite dimension Z, et non pas\\ndirectement un vecteur de petite dimension.\",   \"189\": \"On peut cependant obtenir\\nune repr\u00e9sentation v\u00e9ritablement de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_161",
+      "length": 498
+    }
+  },
+  "161": {
+    "content": "petite dimension en consid\u00e9rant une\\nstatistique descriptive de z|x, par exemple sa moyenne E[z|x]. Bien qu\u2019on\\nutilise le vocabulaire \\\"a priori\\\" et \\\"a posteriori\\\", il convient d\u2019insister sur\\nle fait que les mod\u00e8les consid\u00e9r\u00e9s ici ne sont pas bay\u00e9siens. En inf\u00e9rence\\nbay\u00e9sienne, on place une loi a priori sur des param\u00e8tres inconnus, a\ufb01n de\\nmod\u00e9liser notre incertitude (voir par exemple [ 19]).\",   \"190\": \"Ici, l\u2019a priori est sur des\\nvariables latentes, et les param\u00e8tres sont trait\u00e9s comme",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_162",
+      "length": 499
+    }
+  },
+  "162": {
+    "content": "des quantit\u00e9s d\u00e9ter-\\nministes. Toutefois, les recettes pr\u00e9sent\u00e9es dans ce chapitre sont applicables\\n\u00e9galement \u00e0 des mod\u00e8les bay\u00e9siens (voir par exemple [4]). Les notations introduites dans le paragraphe pr\u00e9c\u00e9dent sont quelque\\npeu abusives, car on appelle p\u00e0 la fois les densit\u00e9s de xetz, conditionnelles\\nou non.\",   \"191\": \"Ce genre d\u2019abus (tout comme la confusion habituelle entre variable\\nal\u00e9atoire et r\u00e9alisation) permet toutefois d\u2019all\u00e9ger consid\u00e9rablement les\\nnotations. Remarquons",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_163",
+      "length": 492
+    }
+  },
+  "163": {
+    "content": "\u00e9galement que l\u2019on a choisi d\u2019ajouter un indice q\u00e0\\ntoutes les densit\u00e9s qui d\u00e9pendent du d\u00e9codeur fq. Cela permettra de rep\u00e9rer\\nde mani\u00e8re commode ce qui d\u00e9pend ou non des param\u00e8tres \u00e0 optimiser\\npar maximum de vraisemblance.\\n1.5.3 La vraisemblance des mod\u00e8les profonds \u00e0 variables latentes\",   \"192\": \"Une approche naturelle pour\\n consid\u00e9r\u00e9s ici ne sont pas bay\u00e9siens. En inf\u00e9rence\\nbay\u00e9sienne, on place une loi a priori sur des param\u00e8tres inconnus, a\ufb01n de\\nmod\u00e9liser notre incertitude (voir par",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_164",
+      "length": 499
+    }
+  },
+  "164": {
+    "content": "exemple [ 19]). Ici, l\u2019a priori est sur des\\nvariables latentes, et les param\u00e8tres sont trait\u00e9s comme des quantit\u00e9s d\u00e9ter-\\nministes. Toutefois, les recettes pr\u00e9sent\u00e9es dans ce chapitre sont applicables\\n\u00e9galement \u00e0 des mod\u00e8les bay\u00e9siens (voir par exemple [4]).\",   \"193\": \"Les notations introduites dans le paragraphe pr\u00e9c\u00e9dent sont quelque\\npeu abusives, car on appelle p\u00e0 la fois les densit\u00e9s de xetz, conditionnelles\\nou non. Ce genre d\u2019abus (tout comme la confusion habituelle entre",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_165",
+      "length": 487
+    }
+  },
+  "165": {
+    "content": "variable\\nal\u00e9atoire et r\u00e9alisation) permet toutefois d\u2019all\u00e9ger consid\u00e9rablement les\\nnotations. Remarquons \u00e9galement que l\u2019on a choisi d\u2019ajouter un indice q\u00e0\\ntoutes les densit\u00e9s qui d\u00e9pendent du d\u00e9codeur fq.\",   \"194\": \"Cela permettra de rep\u00e9rer\\nde mani\u00e8re commode ce qui d\u00e9pend ou non des param\u00e8tres \u00e0 optimiser\\npar maximum de vraisemblance.\\n1.5.3 La vraisemblance des mod\u00e8les profonds \u00e0 variables latentes Une approche naturelle pour estimer les param\u00e8tres inconnus qd\u2019un\\nmod\u00e8le \u00e0 variables",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_166",
+      "length": 497
+    }
+  },
+  "166": {
+    "content": "latentes serait d\u2019en maximiser la vraisemblance. Celle-ci\\nest \u00e9gale \u00e0\\n`(q)=n\\n\u00c2\\ni=1logpq(xi)=n\\n\u00c2\\ni=1log\u2713Z\\nXpq(xi|z)p(z)dz\u25c6\\n(1.21)\\n=n\\n\u00c2\\ni=1log\u2713Z\\nXF(xi|fq(z))p(z)dz\u25c6\\n.\",   \"195\": \"(1.22)\\nDans le cas de certains mod\u00e8les lin\u00e9aires \u00e9voqu\u00e9s pr\u00e9c\u00e9demment (par\\nexemple l\u2019analyse en composantes principales probabiliste ou l\u2019analyse fac-\\ntorielle), les nint\u00e9grales impliqu\u00e9es dans l\u2019expression de la vraisemblance\\npeuvent \u00eatre explicitement calcul\u00e9es, et `(q)peut \u00eatre optimis\u00e9e \u00e0",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_167",
+      "length": 487
+    }
+  },
+  "167": {
+    "content": "l\u2019aide\\nd\u2019algorithmes d\u2019optimisation plus ou moins standards. En revanche, dans1.5.\",   \"196\": \"Mod\u00e8les profonds \u00e0 variables latentes xxv\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Illustrative exampleof a DLVM for binaryimages\\nDeeplatent variable models(DLVMs)\u2022Latent variable",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_168",
+      "length": 489
+    }
+  },
+  "168": {
+    "content": "modelsthatleveragedeeplearning.\u2022Includevariationalautoencoders(VAEs) and generativeadversarialnetworks(GANs).\u2022Nonlineargeneralisationof factor analysis, PCA, topic models\u2026\\nKingma& Welling(ICLR 2014), Rezendeet al.\",   \"197\": \"(ICML 2014), Goodfellowet al. (NeurIPS2014)\\n12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed & Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d. random variables driven by the",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_169",
+      "length": 438
+    }
+  },
+  "169": {
+    "content": "model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep)\",   \"198\": \"neural networkcalled thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g. multivariate Gaussians or products ofmultinomials)12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed &",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_170",
+      "length": 496
+    }
+  },
+  "170": {
+    "content": "Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d. random variables driven by the model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model\\n models\u2026\\nKingma& Welling(ICLR 2014), Rezendeet al. (ICML 2014), Goodfellowet al.\",   \"199\": \"(NeurIPS2014)\\n12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed & Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d. random variables driven by the",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_171",
+      "length": 439
+    }
+  },
+  "171": {
+    "content": "model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep) neural networkcalled thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g.\",   \"200\": \"multivariate Gaussians or products ofmultinomials)12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed &",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_172",
+      "length": 496
+    }
+  },
+  "172": {
+    "content": "Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d. random variables driven by the model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep)\",   \"201\": \"neural networkcalled thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g.\",   \"202\": \"multivariate Gaussians or products",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_173",
+      "length": 494
+    }
+  },
+  "173": {
+    "content": "ofmultinomials)Deepneural network(decoder, generator)1113Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_174",
+      "length": 390
+    }
+  },
+  "174": {
+    "content": "modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z)\",   \"203\": \"= Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)\\nf(z)xj,k\u21e0Bern(fj,k(z))\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_175",
+      "length": 490
+    }
+  },
+  "175": {
+    "content": "networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))Illustrative exampleof",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_176",
+      "length": 500
+    }
+  },
+  "176": {
+    "content": "a DLVM for binaryimages\",   \"204\": \"Deeplatent variable models(DLVMs)\u2022Latent variable modelsthatleveragedeeplearning.\u2022Includevariationalautoencoders(VAEs) and generativeadversarialnetworks(GANs).\u2022Nonlineargeneralisationof factor analysis, PCA, topic models\u2026\\nKingma& Welling(ICLR \\n\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z)\",   \"205\": \"= Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\n13Illustrative example of a",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_177",
+      "length": 494
+    }
+  },
+  "177": {
+    "content": "DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))Illustrative exampleof a DLVM for binaryimages Deeplatent variable\",   \"206\": \"models(DLVMs)\u2022Latent variable modelsthatleveragedeeplearning.\u2022Includevariationalautoencoders(VAEs) and",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_178",
+      "length": 497
+    }
+  },
+  "178": {
+    "content": "generativeadversarialnetworks(GANs).\u2022Nonlineargeneralisationof factor analysis, PCA, topic models\u2026\\nKingma& Welling(ICLR 2014), Rezendeet al. (ICML 2014), Goodfellowet al. (NeurIPS2014)\\n12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed & Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d. random variables\",   \"207\": \"driven by the model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_179",
+      "length": 491
+    }
+  },
+  "179": {
+    "content": "theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep) neural networkcalled thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g. multivariate Gaussians or products ofmultinomials)12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed & Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d.\",   \"208\": \"random variables driven by the",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_180",
+      "length": 454
+    }
+  },
+  "180": {
+    "content": "model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep) neural networkcalled thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g.\",   \"209\": \"multivariate Gaussians or products ofmultinomials)Deepneural network(decoder, generator)1113Illustrative example of a DLVMTraining",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_181",
+      "length": 494
+    }
+  },
+  "181": {
+    "content": "data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z)\",   \"210\": \"=",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_182",
+      "length": 451
+    }
+  },
+  "182": {
+    "content": "Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p\\n data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z)",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_183",
+      "length": 500
+    }
+  },
+  "183": {
+    "content": "= Sigmoid(Vtanh(Wz+b)+\\u0000)\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z)\",   \"211\": \"= Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_184",
+      "length": 469
+    }
+  },
+  "184": {
+    "content": "modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)\\nxj,k\u21e0Bern(fj,k(z))\\n13Illustrative example\",   \"212\": \"of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_185",
+      "length": 490
+    }
+  },
+  "185": {
+    "content": "networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))Illustrative exampleof a DLVM for binaryimages Deeplatent variable\",   \"213\": \"models(DLVMs)\u2022Latent variable modelsthatleveragedeeplearning.\u2022Includevariationalautoencoders(VAEs) and generativeadversarialnetworks(GANs).\u2022Nonlineargeneralisationof factor analysis, PCA, topic models\u2026\\nKingma& Welling(ICLR 2014), Rezendeet al. (ICML 2014), Goodfellowet al.",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_186",
+      "length": 485
+    }
+  },
+  "186": {
+    "content": "(NeurIPS2014)\\n12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed & Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d. random variables\",   \"214\": \"driven by the model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep) neural networkcalled thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_187",
+      "length": 490
+    }
+  },
+  "187": {
+    "content": "usuallyverysimple: unimodal and fully factorised (e.g. multivariate Gaussians or products ofmultinomials)12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed & Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d.\",   \"215\": \"random variables driven by the model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep) neural networkcalled",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_188",
+      "length": 486
+    }
+  },
+  "188": {
+    "content": "thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g.\",   \"216\": \"multivariate Gaussians or products ofmultinomials)Deepneural network(decoder, generator)1113Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nz))(observation model)zx\\u0000nwhere\u2022z2Rdis thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep) neural networkcalled",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_189",
+      "length": 466
+    }
+  },
+  "189": {
+    "content": "thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g.\",   \"217\": \"multivariate Gaussians or products ofmultinomials)12Deep latent variable models (DLVMs)(Kingma and Welling, 2014, Rezende, Mohamed & Wierstra (2014))Assume that(xi,zi)i\\u0000nare i.i.d. random variables driven by the model:\\u0000z\u21e0p(z)(prior)x\u21e0p\\u0000(x|z)=\\u0000(x|f\\u0000(z))(observation model)zx\\u0000nwhere\u2022z2Rdis",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_190",
+      "length": 478
+    }
+  },
+  "190": {
+    "content": "thelatentvariable,\u2022x2Xis theobservedvariable,\u2022the functionf\\u0000:Rd!His a(deep)\",   \"218\": \"neural networkcalled thedecoder\u2022(\\u0000(\u00b7|\\u0000))\\u0000\\u0000His a parametric family called theobservation model, usuallyverysimple: unimodal and fully factorised (e.g.\",   \"219\": \"multivariate Gaussians or products ofmultinomials)Deepneural network(decoder, generator)1113Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_191",
+      "length": 445
+    }
+  },
+  "191": {
+    "content": "modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z)\",   \"220\": \"=",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_192",
+      "length": 411
+    }
+  },
+  "192": {
+    "content": "Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\n13Illustrative example of a DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\n13Illustrative example of a",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_193",
+      "length": 493
+    }
+  },
+  "193": {
+    "content": "DLVMTraining data{x1,...,xn}binary MNIST\\nGenerative modelforz2R2andx2{0,1}28\\u000028\\u0000\\u0000\\u0000\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) = Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\nz\u21e0\\u0000\\n<latexit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_194",
+      "length": 336
+    }
+  },
+  "194": {
+    "content": "sha1_base64=\\\"u49trcKsEQ0vfFpuXNKVWfCvR+s=\\\">AAACzXicjVHLSsNAFD2Nr1pfVZdugkVwVZIq6LLoxp0V7APbIsl0WofmRTIRatWtP+BWf0v8A/0L74wpqEV0QpIz595zZu69buSJRFrWa86YmZ2bX8gvFpaWV1bXiusbjSRMY8brLPTCuOU6CfdEwOtSSI+3opg7vuvxpjs8VvHmNY8TEQbnchTxru8MAtEXzJFEXdyYnUT4ZicSl8WSVbb0MqeBnYESslULiy/ooIcQ\\n\\u0000\\u0000z\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000xj,k\u21e0Bernoulli(p=fj,k(z))Decoder networkf(z) =",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_195",
+      "length": 377
+    }
+  },
+  "195": {
+    "content": "Sigmoid(Vtanh(Wz+b)+\\u0000)Generationz\u21e0N\\u0000\uf8ff00\\u0000,\uf8ff1001\\u0000\\u0000z=(\\u00001.2033,0.5340)f(z)xj,k\u21e0Bern(fj,k(z))\\nz\u21e0\\u0000\\n<latexit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_196",
+      "length": 138
+    }
+  },
+  "196": {
+    "content": "sha1_base64=\\\"u49trcKsEQ0vfFpuXNKVWfCvR+s=\\\">AAACzXicjVHLSsNAFD2Nr1pfVZdugkVwVZIq6LLoxp0V7APbIsl0WofmRTIRatWtP+BWf0v8A/0L74wpqEV0QpIz595zZu69buSJRFrWa86YmZ2bX8gvFpaWV1bXiusbjSRMY8brLPTCuOU6CfdEwOtSSI+3opg7vuvxpjs8VvHmNY8TEQbnchTxru8MAtEXzJFEXdyYnUT4ZicSl8WSVbb0MqeBnYESslULiy/ooIcQDCl8cASQhD04SOhpw4aFiLguxsTFhISOc9yhQNqUsjhlOMQO6TugXTtjA9orz0SrGZ3i0RuT0sQOaULKiwmr00wdT7WzYn/zHmtPdbcR/d3MyydW4orYv3STzP/qVC0SfRzqGgTVFGlGVccyl1R3Rd3c/FKVJIeIOIV7FI8JM62c9NnUmkTXrnrr6PibzlSs2rMsN8W7uiUN2P45zmnQqJTtvXLlbL9UPcpGnccWtrFL8zxAFSeooU7eAR7xhGfj1EiNW+P+M9XIZZpNfFvGwwczQpL3</latexit>f\u02c6\\u0000(z)\\n<latexit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_197",
+      "length": 596
+    }
+  },
+  "197": {
+    "content": "sha1_base64=\\\"YHO1SemYz8qtaz7b9NKCg9gpRaQ=\\\">AAAC2HicjVHLTsJAFD3UF+KrytJNIzHBDSlookuiG5eYyCMCIdMyQENpm3ZqgoTEnXHrD7jVLzL+gf6Fd8aSqMToNG3PnHvPmbn3WoHrRMI0X1PawuLS8kp6NbO2vrG5pW/v1CI/Dm1etX3XDxsWi7jreLwqHOHyRhByNrJcXreGZzJev+Zh5PjepRgHvD1ifc/pOTYTRHX0bK8zaQ2YmLTEgAs2neZvDjp6ziyYahnzoJiAHJJV8fUXtNCFDxsxRuDwIAi7YIjoaaIIEwFxbUyICwk5Ks4xRYa0MWVxymDEDunbp10zYT3aS89IqW06xaU3JKWBfdL4lBcSlqcZKh4rZ8n+5j1RnvJuY/pbideIWIEBsX/pZpn/1claBHo4UTU4VFOgGFmdnbjEqivy5saXqgQ5BMRJ3KV4SNhWylmfDaWJVO2yt0zF31SmZOXeTnJjvMtb0oCLP8c5D2qlQvGwULo4ypVPk1GnsYs95GmexyjjHBVUyXuMRzzhWbvSbrU77f4zVUslmiy+Le3hA7yjl3k=</latexit>x\u21e028\\u000028\\u0000j=1B([f\u02c6\\u0000(z)]j)\\n<latexit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_198",
+      "length": 643
+    }
+  },
+  "198": {
+    "content": "sha1_base64=\\\"wkdZXS8ZF84S19mV/MQIIBn/7e0=\\\">AAADC3icjVHLbtQwFD0Nr\\nAs2neZvDjp6ziyYahnzoJiAHJJV8fUXtNCFDxsxRuDwIAi7YIjoaaIIEwFxbUyICwk5Ks4xRYa0MWVxymDEDunbp10zYT3aS89IqW06xaU3JKWBfdL4lBcSlqcZKh4rZ8n+5j1RnvJuY/pbideIWIEBsX/pZpn/1claBHo4UTU4VFOgGFmdnbjEqivy5saXqgQ5BMRJ3KV4SNhWylmfDaWJVO2yt0zF31SmZOXeTnJjvMtb0oCLP8c5D2qlQvGwULo4ypVPk1GnsYs95GmexyjjHBVUyXuMRzzhWbvSbrU77f4zVUslmiy+Le3hA7yjl3k=</latexit>x\u21e028\\u000028\\u0000j=1B([f\u02c6\\u0000(z)]j)\\n<latexit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_199",
+      "length": 449
+    }
+  },
+  "199": {
+    "content": "sha1_base64=\\\"wkdZXS8ZF84S19mV/MQIIBn/7e0=\\\">AAADC3icjVHLbtQwFD0Nr1JeAyzZWIyQpptRMkViNkhVKyGWRWLaSpMhcjyejtu8ZDuINson8Cfs2CG2/YFuEIIPgL/g2qQSUCFwlOT43HuOfe9Nq0wZG4afV4JLl69cvbZ6fe3GzVu37/Tu3ts1Za2FnIgyK/V+yo3MVCEnVtlM7lda8jzN5F56tO3ie6+lNqosXtrjSs5yflCohRLcEpX0nr1hsVE5iytdzpPm8GnUvmpGYxZblUvDRuOWxTm3S8GzZqsdTBdJEy+5bWK7lJa37eBkfZYcrie9fjgM/WIXQdSBPrq1U/Y+IcYcJQRq5JAoYAln4DD0TBEhREXcDA1xmpDycYkWa6StKUtSBif2iL4HtJt2bEF752m8WtApGb2alAyPSFNSnibsTmM+Xntnx/7Nu/Ge7m7H9E87r5xYiyWx/9KdZ/6vztViscDY16CopsozrjrRudS+K+7m7JeqLDlUxDk8p7gmLLzyvM/Ma4yv3fWW+/g3n+lYtxddbo3v7pY04OjPcV4Eu6NhtDEcvXjc39zqRr2KB3iIAc3zCTbxHDuYkPc7nOELvgZvg/fBh+Djz9RgpdPcx28rOP0B/i6rXg==</latexit>Donn\u00b4",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_200",
+      "length": 668
+    }
+  },
+  "200": {
+    "content": "ees d\u2019entra\u02c6 \u0131nement<latexit sha1_base64=\\\"+DGDYXdHwJs97qLXs3776Wtut3w=\\\">AAAC8XicjVFBT9RAGH1UEVhBiyRcvDRuCJw27XqQIwEPHjFx2U3WjWnLAJNtO810arIh/Alu3AhX/4BX/RPEf6AXf4NvZrtR2RCdSTtv3vd9b+abl5SZrEwYflvwHjxcfLS0vNJ6vLr25Km//uyoUrVORS9VmdKDJK5EJgvRM9JkYlBqEedJJvrJ+MDG+x+FrqQq3plJKUZ5fFrIE5nGhpTyN/EaCgXnDwhUCHCMbaICBhoxfhIJ5FPmg98OO6EbwTyIGtBGMw6Vf4v3FFRIUc9EiDMKV5xDRAhRkhvhnJwmki4ucIEWa2tmCWbEZMf8n3I\\nvg/fBh+Djz9RgpdPcx28rOP0B/i6rXg==</latexit>Donn\u00b4 ees d\u2019entra\u02c6 \u0131nement<latexit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_201",
+      "length": 476
+    }
+  },
+  "201": {
+    "content": "sha1_base64=\\\"+DGDYXdHwJs97qLXs3776Wtut3w=\\\">AAAC8XicjVFBT9RAGH1UEVhBiyRcvDRuCJw27XqQIwEPHjFx2U3WjWnLAJNtO810arIh/Alu3AhX/4BX/RPEf6AXf4NvZrtR2RCdSTtv3vd9b+abl5SZrEwYflvwHjxcfLS0vNJ6vLr25Km//uyoUrVORS9VmdKDJK5EJgvRM9JkYlBqEedJJvrJ+MDG+x+FrqQq3plJKUZ5fFrIE5nGhpTyN/EaCgXnDwhUCHCMbaICBhoxfhIJ5FPmg98OO6EbwTyIGtBGMw6Vf4v3FFRIUc9EiDMKV5xDRAhRkhvhnJwmki4ucIEWa2tmCWbEZMf8n3I3bNiC+9xd2lanPCXjp1kZYIs1inma2J4WuHjtlC17n/a507R3m3BNGq2crMEZ2X/VzTL/t872YnCCXdeDZE+lY2x3aaNSu1exNw/+6MpQoSSnnWWSq2CF+W2W63xqaereNnbx7y7TsnafNrk17ectaXB01855cNTtRC873bfd9t5+Y/UynuMFdujnK+zhDQ7Ro/YlPuMLvnqVd+VdezfTVG+hqdnAX8P79AuhXZpq</latexit>Tirage",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_202",
+      "length": 617
+    }
+  },
+  "202": {
+    "content": "` a partir du mod` ele entra\u02c6 \u0131n\u00b4 ep\u02c6\\u0000\\n<latexit",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_203",
+      "length": 53
+    }
+  },
+  "203": {
+    "content": "sha1_base64=\\\"niIYqcu71NKrxdyqXXCI/0o6tbk=\\\">AAADL3icjVJNT9tAFJy4QClfdemxF4uAxClyUlXtEbUXjlQigARRZG82YOEv2etKEcqP6j/pDfVScYRLj722sy8bVS1CsJadt7Nv3nuzk7hMk9qE4feW92xhcen58ouV1bX1jZf+q82jumgqpfuqSIvqJI5qnSa57pvEpPqkrHSUxak+ji8/2fPjL7qqkyI/NJNSD7LoPE/GiYoMocJ/h0MkqBDhHBoBbviW3FUwggcYoeE3Q8HoFqlkaeQ8t6yfjO6IbJM1xBXOcEHUSGQYa34jTPlsD/122AllBfeDrgvacOug8K9ZZMTGiiNkrqniCBFqPqfoImRbgwHbzUdWMuIUK+Q2zNIiR+HSSTx1aM69rVkLW7FLyrciM8AOOQXzrHzbLZDzRipb9KHaV1LTzjbhb+xqZXIhF0Qf480zn8qzWgzG+CAaEmoqBbHqlKvSyK3MbPuryppSEpsZbI3WZFjm/J4D4dSiPRKr7fmtZFrU7pXLbfgX4JQ0uPu/nfeDo16n+7bT+9xr7310Vi/jDbawSz/fYw/7OECftb/hF3634H31rr0f3s0s1Ws5zmv8s7y7Pznvp/8=</latexit>\\nFIGURE",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_204",
+      "length": 651
+    }
+  },
+  "204": {
+    "content": "1.2\u2013 Exemple d\u2019un mod\u00e8le profond \u00e0 variables latentes utilisant un\\nespace latent de deux dimensions pour mod\u00e9liser MNIST.\\nles cas qui nous int\u00e9ressent impliquant des r\u00e9seaux de neurones profonds\\nen guide de fq, ces int\u00e9grales n\u2019ont pas",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_205",
+      "length": 238
+    }
+  },
+  "205": {
+    "content": "g\u00e9n\u00e9\\ncEHUSGQYa34jTPlsD/122AllBfeDrgvacOug8K9ZZMTGiiNkrqniCBFqPqfoImRbgwHbzUdWMuIUK+Q2zNIiR+HSSTx1aM69rVkLW7FLyrciM8AOOQXzrHzbLZDzRipb9KHaV1LTzjbhb+xqZXIhF0Qf480zn8qzWgzG+CAaEmoqBbHqlKvSyK3MbPuryppSEpsZbI3WZFjm/J4D4dSiPRKr7fmtZFrU7pXLbfgX4JQ0uPu/nfeDo16n+7bT+9xr7310Vi/jDbawSz/fYw/7OECftb/hF3634H31rr0f3s0s1Ws5zmv8s7y7Pznvp/8=</latexit>\\nFIGURE 1.2\u2013 Exemple d\u2019un mod\u00e8le profond \u00e0 variables latentes utilisant un\\nespace latent de deux dimensions pour mod\u00e9liser MNIST.\\nles cas qui nous int\u00e9ressent",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_206",
+      "length": 497
+    }
+  },
+  "206": {
+    "content": "impliquant des r\u00e9seaux de neurones profonds\\nen guide de fq, ces int\u00e9grales n\u2019ont pas g\u00e9n\u00e9ralement de forme simple.\\nComme ces int\u00e9grales sont des esp\u00e9rances, une approche naturelle serait\\nd\u2019estimer celles-ci \u00e0 l\u2019aide d\u2019une m\u00e9thode de Monte Carlo.\",   \"221\": \"C\u2019est l\u2019id\u00e9e\\nderri\u00e8re l\u2019inf\u00e9rence variationnelle par \u00e9chantillonnage pr\u00e9f\u00e9rentiel.\\n1.5.4 Inf\u00e9rence variationnelle par \u00e9chantillonnage pr\u00e9f\u00e9rentiel Notre objectif est d\u2019approcher\\nlogpq(xi)= log\u2713Z\\nXF(xi|fq(z))p(z)dz\u25c6\\n, (1.23)\\npour un",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_207",
+      "length": 498
+    }
+  },
+  "207": {
+    "content": "certain i2{1,...,n}, \u00e0 l\u2019aide d\u2019une m\u00e9thode de Monte Carlo. Une\\napproche simple serait de tirer quelques z1,...,zK\u21e0pind\u00e9pendants, puis\\nde regarder l\u2019approximation\\nZ\\nXF(xi|fq(z))p(z)dz\u21e1IK(xi)=1\\nKK\\n\u00c2\\nk=1F(xi|fq(zk)).\",   \"222\": \"(1.24)\\nLa loi des grands nombres et la lin\u00e9arit\u00e9 de l\u2019esp\u00e9rance assurent que IK(xi)\\nest un estimateur sans biais et consistant de l\u2019int\u00e9grale. Lorsqu\u2019un estima -xxvi Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\\nteur est sans biais, une mani\u00e8re commode de quanti\ufb01er sa",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_208",
+      "length": 496
+    }
+  },
+  "208": {
+    "content": "pr\u00e9cision est\\nsimplement de regarder sa variance. Dans ce cas,\\nVar(IK(xi)) =Var(F(xi|fq(z1)))\\nK. (1.25)\\nLa variance d\u00e9cro\u00eetra donc en O(1/K), mais risque de demeurer grande\\nsiVar(F(xi|fq(z1)))l\u2019est.\",   \"223\": \"Une mani\u00e8re classique de modi\ufb01er l\u2019estimateur\\nde Monte Carlo a\ufb01n de r\u00e9duire se variance est de faire de l\u2019\u00e9chantillonage\\npr\u00e9f\u00e9rentiel .\",   \"224\": \"L\u2019id\u00e9e est d\u2019introduire une nouvelle densit\u00e9 de probabilit\u00e9 q(z),\\ndont le support contient celui de p(z), et",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_209",
+      "length": 475
+    }
+  },
+  "209": {
+    "content": "d\u2019\u00e9crire\\nZ\\nXF(xi|fq(z))p(z)dz=Z\\nXF(xi|fq(z))p(z)\\nq(z)q(z)dz (1.26)\\n\u21e1Iq\\nK(xi)=1\\nKK\\n\u00c2\\nk=1F(xi|fq(zk))p(zk)\\nq(zk), (1.27)\\no\u00f9 les z1,...,zKsont d\u00e9sormais tir\u00e9s selon la loi de qplut\u00f4t que p. La\\ncondition de support assure que le d\u00e9nominateur ne sera jamais nul.\\nEst-ce que ce nouvel estimateur Iq\\nK(xi)est meilleur que l\u2019estimateur\\nsimple IK(xi)?\",   \"225\": \"Pour les m\u00eames raisons, Iq\\nK(xi)est \u00e9galement consistant et\\nsans biais, mais qu\u2019en est-il de sa variance? La r\u00e9ponse d\u00e9pend du",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_210",
+      "length": 498
+    }
+  },
+  "210": {
+    "content": "choix\\nde la densit\u00e9 de proposition q. \u00c9tonnamment, il est possible de choisir\\nune certaine q\u21e4\\nitelle que Var(Iq\u21e4\\ni\\nK(xi)) = 0, c\u2019est \u00e0 dire qu\u2019un seul tirage de\\nMonte Carlo suf\ufffd\\nduire se variance est de faire de l\u2019\u00e9chantillonage\\npr\u00e9f\u00e9rentiel .\",   \"226\": \"L\u2019id\u00e9e est d\u2019introduire une nouvelle densit\u00e9 de probabilit\u00e9 q(z),\\ndont le support contient celui de p(z), et d\u2019\u00e9crire\\nZ\\nXF(xi|fq(z))p(z)dz=Z\\nXF(xi|fq(z))p(z)\\nq(z)q(z)dz (1.26)\\n\u21e1Iq\\nK(xi)=1\\nKK\\n\u00c2\\nk=1F(xi|fq(zk))p(zk)\\nq(zk),",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_211",
+      "length": 495
+    }
+  },
+  "211": {
+    "content": "(1.27)\\no\u00f9 les z1,...,zKsont d\u00e9sormais tir\u00e9s selon la loi de qplut\u00f4t que p. La\\ncondition de support assure que le d\u00e9nominateur ne sera jamais nul.\\nEst-ce que ce nouvel estimateur Iq\\nK(xi)est meilleur que l\u2019estimateur\\nsimple IK(xi)?\",   \"227\": \"Pour les m\u00eames raisons, Iq\\nK(xi)est \u00e9galement consistant et\\nsans biais, mais qu\u2019en est-il de sa variance? La r\u00e9ponse d\u00e9pend du choix\\nde la densit\u00e9 de proposition q. \u00c9tonnamment, il est possible de choisir\\nune certaine q\u21e4\\nitelle que",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_212",
+      "length": 484
+    }
+  },
+  "212": {
+    "content": "Var(Iq\u21e4\\ni\\nK(xi)) = 0, c\u2019est \u00e0 dire qu\u2019un seul tirage de\\nMonte Carlo suf\ufb01t pour estimer parfaitement notre int\u00e9grale!\",   \"228\": \"En effet, en\\nchoisissant\\nq\u21e4\\ni(z)= pq(z|xi)=F(xi|fq(z))p(z)\\npq(xi), (1.28)\\non voit que Iq\u21e4\\ni\\nK(xi)= p(xi)pour tout K.\\nMalheureusement, tirer selon la loi de densit\u00e9 q\u21e4\\ni(z)= pq(z|xi)n\u2019est\\npas chose ais\u00e9e. Des m\u00e9thodes de Monte Carlo par cha\u00eenes de Markov\\npourraient \u00eatre utilis\u00e9es \u00e0 cette \ufb01n, mais \u00e0 un co\u00fbt calculatoire tr\u00e8s impor-\\ntant.\",   \"229\": \"Ici,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_213",
+      "length": 498
+    }
+  },
+  "213": {
+    "content": "nous pr\u00e9f\u00e9rons voir cette loi id\u00e9ale non pas comme un objectif en\\nsoi, mais comme une raison d\u2019esp\u00e9rer qu\u2019en choisissant \\\"raisonnablement\\\"\\nune loi de proposition, l\u2019\u00e9chantillonage pr\u00e9f\u00e9rentiel peut fonctionner beau-\\ncoup mieux qu\u2019un estimateur de Monte Carlo simple. Notre objectif sera\\nainsi de choisir des densit\u00e9s de propositions q1,...,qna\ufb01n d\u2019approcher au mieux\\nlogp(x1), ..., log p(xn).\",   \"230\": \"Une id\u00e9e naturelle serait de choisir ces q1,...,qndans une famille pa-\\nram\u00e9tr\u00e9e de",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_214",
+      "length": 495
+    }
+  },
+  "214": {
+    "content": "densit\u00e9s (Y(z|k))k2KsurZ(par exemple si Zest un espace\\neuclidien, on pourrait choisir une famille de gaussiennes multivari\u00e9es).1.5. Mod\u00e8les profonds \u00e0 variables latentes xxvii\\nCela veut dire que choisir q1,...,qnreviendra \u00e0 choisir des param\u00e8tres\\nk1,...,kn2Kpour chacune des lois de proposition. Dans le cas de proposi-\\ntions gaussiennes, cela impliquerait de choisir nmoyennes et nmatrices de\\ncovariances.\",   \"231\": \"Cependant, dans les situations qui nous int\u00e9ressent, le",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_215",
+      "length": 479
+    }
+  },
+  "215": {
+    "content": "nombre\\nd\u2019observations nest g\u00e9n\u00e9ralement tr\u00e8s grand (avec peu d\u2019observations,\\nentra\u00eener des r\u00e9seaux de neurones profonds est peu indiqu\u00e9). Cela veut\\ndire que choisir ces k1,...,knsera dif\ufb01cile et co\u00fbteux en m\u00e9moire. On va\\nmontrer ici une autre solution, appel\u00e9e inf\u00e9rence variationnelle amortie . L\u2019id\u00e9e\\nde base est assez simple : plut\u00f4t que de choisir une valeur de kpour chaque\\nxi, on va apprendre une fonction envoyant xvers le kcorrespondant.\",   \"232\": \"Cette fonc-\\ntion, qu\u2019on appellera",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_216",
+      "length": 498
+    }
+  },
+  "216": {
+    "content": "g:X\\u0000 ! K , sera appel\u00e9e encodeur , car elle envoie\\ndes donn\u00e9es xvers une distribution Y(g(x))sur l\u2019espace des codes. Nous\\nallons \u00e0 nouveau mod\u00e9liser cette fonction \u00e0 l\u2019aide d\u2019un r\u00e9seau de neurones,\\ndont les param\u00e8tres sont stock\u00e9s dans un vecteur g2G, on notera donc gg.\\nEn de\ufb01nitive, notre proposition sera donc, pour chaque point xi\\nqi(z)= Y(z|gg(xi)).\",   \"233\": \"(1.29)\\nIl est commode de voir ces distributions non pas comme une suite de n\\ndistributions, mais comme des lois",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_217",
+      "length": 490
+    }
+  },
+  "217": {
+    "content": "conditionnelles toutes param\u00e9tr\u00e9es par\\nun m\u00eame g\\n de\\ncovariances. Cependant, dans les situations qui nous int\u00e9ressent, le nombre\\nd\u2019observations nest g\u00e9n\u00e9ralement tr\u00e8s grand (avec peu d\u2019observations,\\nentra\u00eener des r\u00e9seaux de neurones profonds est peu indiqu\u00e9). Cela veut\\ndire que choisir ces k1,...,knsera dif\ufb01cile et co\u00fbteux en m\u00e9moire.\",   \"234\": \"On va\\nmontrer ici une autre solution, appel\u00e9e inf\u00e9rence variationnelle amortie . L\u2019id\u00e9e\\nde base est assez simple : plut\u00f4t que de choisir une",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_218",
+      "length": 497
+    }
+  },
+  "218": {
+    "content": "valeur de kpour chaque\\nxi, on va apprendre une fonction envoyant xvers le kcorrespondant. Cette fonc-\\ntion, qu\u2019on appellera g:X\\u0000 ! K , sera appel\u00e9e encodeur , car elle envoie\\ndes donn\u00e9es xvers une distribution Y(g(x))sur l\u2019espace des codes.\",   \"235\": \"Nous\\nallons \u00e0 nouveau mod\u00e9liser cette fonction \u00e0 l\u2019aide d\u2019un r\u00e9seau de neurones,\\ndont les param\u00e8tres sont stock\u00e9s dans un vecteur g2G, on notera donc gg.\\nEn de\ufb01nitive, notre proposition sera donc, pour chaque point xi\\nqi(z)=",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_219",
+      "length": 489
+    }
+  },
+  "219": {
+    "content": "Y(z|gg(xi)). (1.29)\\nIl est commode de voir ces distributions non pas comme une suite de n\\ndistributions, mais comme des lois conditionnelles toutes param\u00e9tr\u00e9es par\\nun m\u00eame g:\\nqi(z)= qg(z|xi), (1.30)\\no\u00f9, pour tout x2X,\\nqg(z|x)= Y(z|gg(x)).\",   \"236\": \"(1.31)\\nL\u2019int\u00e9r\u00eat de d\u00e9\ufb01nir cette loi conditionnelle qg(z|x)est multiple :\\n\u2014nous n\u2019aurons pas \u00e0 apprendre une loi qipour chaque point de\\ndonn\u00e9es mais une seule loi conditionnelle;\\n\u2014si nous sommes en pr\u00e9sence d\u2019un nouveau point exqui n\u2019\u00e9tait",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_220",
+      "length": 500
+    }
+  },
+  "220": {
+    "content": "pas\\ndans la base de donn\u00e9es initiale, nous pouvons ais\u00e9ment calculer\\nune proposition ad\u00e9quate, en encodant xet calculant qg(z|x);\\n\u2014nous pouvons choisir un type d\u2019architecture pertinent pour ggen\\nfonction de nos donn\u00e9es.\",   \"237\": \"Par exemple, dans le cas d\u2019images, nous\\npourrions consid\u00e9rer un r\u00e9seau convolutif.\\nEn d\u00e9\ufb01nitive, notre estimateur de la log-vraisemblance sera\\n`(q)\u21e1L K(q,g)=n\\n\u00c2\\ni=1Ezi1,...,ziK\u21e0qg(z|xi)\\\"\\nlog \\n1\\nKK\\n\u00c2\\nk=1F(xi|fq(zik))p(zik)\\nqg(zik|x)! #\\n.\\n(1.32) L\u2019id\u00e9e",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_221",
+      "length": 500
+    }
+  },
+  "221": {
+    "content": "sera de maximiser LK(q,g)plut\u00f4t que la vraisemblance `(q). Cela\\npose tout de suite quelques questions :xxviii Chapitre 1. IA et mod\u00e8les g\u00e9n\u00e9ratifs\",   \"238\": \"\u2014Est-il vraiment plus facile de maximiser LK(q,g)que`(q)?Apr\u00e8s tout,\\nLK(q,g)est \u00e9galement compos\u00e9 de nesp\u00e9rance \u00e0 priori dif\ufb01ciles \u00e0\\ncalculer. Cependant, en tirant \u00e0 l\u2019aide de qg(z|x)il est possible de\\ncalculer un estimateur sans biais du gradient de LK(q,g), comme\\nexpliqu\u00e9 par exemple par Mohamed et ses coauteurs [ 16]. Cela\\npermet",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_222",
+      "length": 499
+    }
+  },
+  "222": {
+    "content": "ainsi de maximiser LK(q,g)\u00e0 l\u2019aide de l\u2019algorithme du\\ngradient stochastique (voir par exemple la revue de litt\u00e9rature de\\nBottou, Curtis et Nocedal [1]). \u2014\",   \"239\": \"On a introduit un param\u00e8tre en plus : g. Que fait-on de lui? En fait,\\non va tout simplement maximiser LK(q,g)\u00e0 la fois en get en\\nq! Pourquoi est-ce pertinent? Pour tous q,g, l\u2019in\u00e9galit\u00e9 de Jensen\\nappliqu\u00e9 au logarithme entraine `(q)>LK(q,g). Ansi, \u00e0 q\ufb01x\u00e9,\\nla meilleure approximation de `(q)qui puisse s\u2019\u00e9crire comme",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_223",
+      "length": 488
+    }
+  },
+  "223": {
+    "content": "un\\nLK(q,g)sera\\n`(q)\u21e1max\\ng2GLK(q,g).\",   \"240\": \"(1.33)\\nLe fait que notre approximation est une borne inf\u00e9rieure de la\\nvraisemblance justi\ufb01e le nom \\\"evidence lower bound\\\" pour d\u00e9signer\\nLK(q,g).\\n\u2014Quelle est l\u2019in\ufb02uence du nombre de tirages K?Intuitivement, il faudrait\\nchoisir Kaussi grand que possible\\n)il est possible de\\ncalculer un estimateur sans biais du gradient de LK(q,g), comme\\nexpliqu\u00e9 par exemple par Mohamed et ses coauteurs [ 16].\",   \"241\": \"Cela\\npermet ainsi de maximiser",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_224",
+      "length": 497
+    }
+  },
+  "224": {
+    "content": "LK(q,g)\u00e0 l\u2019aide de l\u2019algorithme du\\ngradient stochastique (voir par exemple la revue de litt\u00e9rature de\\nBottou, Curtis et Nocedal [1]). \u2014 On a introduit un param\u00e8tre en plus : g. Que fait-on de lui? En fait,\\non va tout simplement maximiser LK(q,g)\u00e0 la fois en get en\\nq! Pourquoi est-ce pertinent? Pour tous q,g, l\u2019in\u00e9galit\u00e9 de Jensen\\nappliqu\u00e9 au logarithme entraine `(q)>LK(q,g).\",   \"242\": \"Ansi, \u00e0 q\ufb01x\u00e9,\\nla meilleure approximation de `(q)qui puisse s\u2019\u00e9crire comme",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_225",
+      "length": 469
+    }
+  },
+  "225": {
+    "content": "un\\nLK(q,g)sera\\n`(q)\u21e1max\\ng2GLK(q,g). (1.33)\\nLe fait que notre approximation est une borne inf\u00e9rieure de la\\nvraisemblance justi\ufb01e le nom \\\"evidence lower bound\\\" pour d\u00e9signer\\nLK(q,g).\\n\u2014Quelle est l\u2019in\ufb02uence du nombre de tirages K?Intuitivement, il faudrait\\nchoisir Kaussi grand que possible.\",   \"243\": \"On peut en effet prouver (voir\\npar exemple [14]) que\\nLK+1(q,g)>LK(q,g), (1.34)\\nc\u2019est \u00e0 dire que l\u2019approximation devient de plus en plus pr\u00e9cise\\nquand Kgrandit. Domke et Sheldon [ 4] on",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_226",
+      "length": 499
+    }
+  },
+  "226": {
+    "content": "\u00e9galement prouv\u00e9, au\\nprix d\u2019hypoth\u00e8se sur les moments des poids de l\u2019\u00e9chantillonnage\\npr\u00e9f\u00e9rentiel, que LK(q,g)converge vers `(q)\u00e0 vitesse O(1/K). Il s\u2019agirait donc id\u00e9alement de chosir Ktr\u00e8s grand.\",   \"244\": \"Cependant,\\nplus Ksera grand, et plus il sera computationnellement co\u00fbteux\\nd\u2019optimiser LK(q,g).\\nEn d\u00e9\ufb01nitive, on a donc un moyen relativement simple d\u2019apprendre les\\nparam\u00e8tres inconnus de notre mod\u00e8le \u00e0 variables latentes, applicable dans\\nde nombreuses situations.\",   \"245\": \"En",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_227",
+      "length": 495
+    }
+  },
+  "227": {
+    "content": "effet, l\u2019inf\u00e9rence par \u00e9chantillange pr\u00e9f\u00e9rentiel\\ntelle que rapidement d\u00e9crite ici, a \u00e9t\u00e9 appliqu\u00e9e dans de nombreux cadres :\\nsi elle a \u00e9t\u00e9 introduite en premier lieu pour des mod\u00e8les profonds \u00e0 variables\\nlatentes [ 2], cette technique a par exemple \u00e9t\u00e9 appliqu\u00e9e \u00e0 l\u2019apprentissage\\nde processus gaussiens [ 21], de mod\u00e8les s\u00e9quentiels [ 12,17,11], de mod\u00e8les\\nde graphes al\u00e9atoires [ 24], \u00e0 l\u2019apprentissage avec donn\u00e9es manquantes\\n[13, 6, 7], ou \u00e0 l\u2019inf\u00e9rence bay\u00e9sienne en g\u00e9n\u00e9ral [4].1.6.\",",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_228",
+      "length": 497
+    }
+  },
+  "228": {
+    "content": "\"246\": \"Conclusion xxix\\n1.6 Conclusion Allant du g\u00e9n\u00e9ral au particulier , nous nous sommes attach\u00e9s \u00e0 offrir\\nun panorama de l\u2019IA dans sa diversit\u00e9 (des mod\u00e8les symboliques \u00e0 l\u2019ap-\\nprentissage), suivi d\u2019un zoom sur certains mod\u00e8les statistiques r\u00e9cents.\",   \"247\": \"Cette progression sera \u00e9galement l\u2019objectif de la s\u00e9rie de cours bas\u00e9s sur\\nce chapitre : situer l\u2019IA comme champ interdisciplinaire, et d\u00e9tailler un\\nexemple (les mod\u00e8les profonds \u00e0 variables latentes), des math\u00e9matiques",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_229",
+      "length": 489
+    }
+  },
+  "229": {
+    "content": "\u00e0\\nl\u2019impl\u00e9mentation.\\nBibliographie\\n[1]L.BOTTOU , F. E. CURTIS et J.NOCEDAL : Optimization methods for\\nlarge-scale machine learning. SIAM Review , 60(2):223\u2013311, 2018.\\n[2]Y.BURDA , R.GROSSE et R. SALAKHUTDINOV : Importance weighted\\nautoencoders. In International Conference on\",   \"248\": \"Learning Representations ,\\n2016.\\n[ 3]J.CHIQUET , M.MARIADASSOU et S. ROBIN : Variational inference for\\nprobabilistic poisson PCA. The Annals of Applied Statistics , 12(4):2674\u2013\\n2698, 2018.\\n[4]J.DOMKE et",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_230",
+      "length": 500
+    }
+  },
+  "230": {
+    "content": "D. R. SHELDON : Importance weighting and variational\\ninference. In Advances in neural information processing systems , p. 4470\u2013\\n4479, 2018.\\n[5]J.HA\\n sa diversit\u00e9 (des mod\u00e8les symboliques \u00e0 l\u2019ap-\\nprentissage), suivi d\u2019un zoom sur certains mod\u00e8les statistiques r\u00e9cents.\",   \"249\": \"Cette progression sera \u00e9galement l\u2019objectif de la s\u00e9rie de cours bas\u00e9s sur\\nce chapitre : situer l\u2019IA comme champ interdisciplinaire, et d\u00e9tailler un\\nexemple (les mod\u00e8les profonds \u00e0 variables latentes), des",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_231",
+      "length": 492
+    }
+  },
+  "231": {
+    "content": "math\u00e9matiques \u00e0\\nl\u2019impl\u00e9mentation.\\nBibliographie\\n[1]L.BOTTOU , F. E. CURTIS et J.NOCEDAL : Optimization methods for\\nlarge-scale machine learning. SIAM Review , 60(2):223\u2013311, 2018.\\n[2]Y.BURDA , R.GROSSE et R. SALAKHUTDINOV : Importance weighted\\nautoencoders. In International Conference on\",   \"250\": \"Learning Representations ,\\n2016.\\n[ 3]J.CHIQUET , M.MARIADASSOU et S. ROBIN : Variational inference for\\nprobabilistic poisson PCA. The Annals of Applied Statistics , 12(4):2674\u2013\\n2698,",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_232",
+      "length": 493
+    }
+  },
+  "232": {
+    "content": "2018.\\n[4]J.DOMKE et D. R. SHELDON : Importance weighting and variational\\ninference. In Advances in neural information processing systems , p. 4470\u2013\\n4479, 2018.\\n[5]J.HAUGELAND :Arti\ufb01cial Intelligence : The Very Idea .\",   \"251\": \"Massachusetts\\nInstitute of Technology, USA, 1985.\\n[6]N. B. IPSEN , P.-A. MATTEI et J.FRELLSEN : not-MIWAE : Deep gene-\\nrative modelling with missing not at random data. In International\\nConference on Learning Representations , 2021.\\n[ 7]N. B. IPSEN , P.-A.",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_233",
+      "length": 494
+    }
+  },
+  "233": {
+    "content": "MATTEI et J. FRELLSEN : How to deal with mis-\\nsing data in supervised deep learning? In International Conference on\\nLearning Representations , 2022.\\n[ 8]K. G. J\u00d6RESKOG : A general approach to con\ufb01rmatory maximum\\nlikelihood factor analysis.\",   \"252\": \"Psychometrika , 34(2):183\u2013202, 1969.\\n[ 9]D. P. KINGMA et M. WELLING : Auto-encoding variational Bayes. In\\nInternational Conference on Learning Representations , 2014. [10] M. J. KUSNER , B.PAIGE et J. M. HERN\u00c1NDEZ -LOBATO : Grammar",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_234",
+      "length": 489
+    }
+  },
+  "234": {
+    "content": "va-\\nriational autoencoder. In Proceedings of the 34th International Conference\\non Machine Learning-Volume 70 , p. 1945\u20131954. JMLR. org, 2017.xxx BIBLIOGRAPHIE\\n[11] T. A. LE, M.IGL,T .RAINFORTH ,T .JINet F.WOOD : Auto-encoding\\nsequential Monte Carlo .\",   \"253\": \"In International Conference on Learning Repre-\\nsentations , 2018.\\n[12] C. J. MADDISON , J.LAWSON , G.TUCKER , N.HEESS, M. NOROUZI ,\\nA.MNIH,A .DOUCET et Y. TEH: Filtering variational objectives. In\\nAdvances in Neural Information",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_235",
+      "length": 498
+    }
+  },
+  "235": {
+    "content": "Processing Systems , p. 6573\u20136583, 2017. [13] P.-A. MATTEI et J.FRELLSEN : MIWAE : Deep generative modelling\\nand imputation of incomplete data sets. In International Conference on Machine Learning , p. 4413\u20134423, 2019. [ 14]\",   \"254\": \"P.-A. MATTEI et J. FRELLSEN : Uphill roads to variational tight-\\nness : Monotonicity and Monte Carlo objectives. arXiv preprint\\narXiv :2201.10989 , 2022.\\n[15] W.MCCULLOCH et W. PITTS : A logical calculus of ideas immanent in\\nnervous activity. Bulletin of",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_236",
+      "length": 496
+    }
+  },
+  "236": {
+    "content": "Mathematical Biophysics , 5:127\u2013147, 1943.\\n[16] S.MOHAMED , M.ROSCA , M.FIGURNOV et A. MNIH: Monte Carlo\\ngradient estimation in machine learning. Journal of Machine Learning\\nResearch , 21(132):1\u201362, 2020.\\n[17]\",   \"255\": \"C.NAESSETH , S.LINDERMAN , R.RANGANATH et D. BLEI: Varia-\\ntional sequential Monte Carlo. In International Conference on Arti\ufb01cial\\nIntelligence and Statistics , p. 968\u2013977, 2018.\\n[ 18]\\n In\\nAdvances in Neural Information Processing Systems , p. 6573\u20136583, 2017. [13]",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_237",
+      "length": 495
+    }
+  },
+  "237": {
+    "content": "P.-A. MATTEI et J.FRELLSEN : MIWAE : Deep generative modelling\\nand imputation of incomplete data sets. In International Conference on Machine Learning , p. 4413\u20134423, 2019. [ 14]\",   \"256\": \"P.-A. MATTEI et J. FRELLSEN : Uphill roads to variational tight-\\nness : Monotonicity and Monte Carlo objectives. arXiv preprint\\narXiv :2201.10989 , 2022.\\n[15] W.MCCULLOCH et W. PITTS : A logical calculus of ideas immanent in\\nnervous activity. Bulletin of Mathematical Biophysics , 5:127\u2013147, 1943.\\n[16]",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_238",
+      "length": 499
+    }
+  },
+  "238": {
+    "content": "S.MOHAMED , M.ROSCA , M.FIGURNOV et A. MNIH: Monte Carlo\\ngradient estimation in machine learning. Journal of Machine Learning\\nResearch , 21(132):1\u201362, 2020.\\n[17]\",   \"257\": \"C.NAESSETH , S.LINDERMAN , R.RANGANATH et D. BLEI: Varia-\\ntional sequential Monte Carlo. In International Conference on Arti\ufb01cial\\nIntelligence and Statistics , p. 968\u2013977, 2018.\\n[ 18] D.REZENDE , S.MOHAMED et D. WIERSTRA : Stochastic backpro-\\npagation and approximate inference in deep generative models.",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_239",
+      "length": 485
+    }
+  },
+  "239": {
+    "content": "In\\nProceedings of the 31st International Conference on Machine Learning , p.\\n1278\u20131286, 2014.\\n[19 ] C.ROBERT : Le choix bay\u00e9sien : Principes et pratique .\",   \"258\": \"Springer Science &\\nBusiness Media, 2005.\\n[20] S.RUSSELL et P. NORVIG : Arti\ufb01cial Intelligence : A Modern Approach .\\nPrentice Hall, 3 \u00e9dn, 2010.\\n[21] H.SALIMBENI ,V .DUTORDOIR , J.HENSMAN et M. DEISENROTH : Deep\\nGaussian processes with importance-weighted variational inference.\\nInK.CHAUDHURI et R. SALAKHUTDINOV , \u00e9ds :",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_240",
+      "length": 495
+    }
+  },
+  "240": {
+    "content": "Proceedings of the 36th\\nInternational Conference on Machine Learning , vol. 97 de Proceedings of\\nMachine Learning Research , p. 5589\u20135598. PMLR, 09\u201315 Jun 2019.\\n[ 22] H. A. SIMON :\",   \"259\": \"Why should machines learn? InR.MICHALSKI , J.CAR-\\nBONNEL et T. MITCHELL , \u00e9ds : Machine Learning : An Arti\ufb01cial Intelli-\\ngence Approach , p. 25\u201337. Tioga, Palo Alto, CA, 1983.\\n[23] S. M. STIGLER : The epic story of maximum likelihood. Statistical\\nScience , p. 598\u2013620, 2007.BIBLIOGRAPHIE xxxi\\n[24]",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_241",
+      "length": 498
+    }
+  },
+  "241": {
+    "content": "L. S. L. TANet N. FRIEL : Bayesian variational inference for exponential\\nrandom graph models. Journal of Computational and Graphical Statistics ,\\n29(4):910\u2013928, 2020.\\n[25] M. E. TIPPING et C. M. BISHOP :\",   \"260\": \"Probabilistic principal component\\nanalysis. Journal of the Royal Statistical Society : Series B (Statistical\\nMethodology) , 61(3):611\u2013622, 1999.\\n[26] A. M. TURING : Computing machinery and intelligence. Mind , 59(236):\\n433\u2013460, 1950.\\n[27] A. W. Van der VAART :Asymptotic",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_242",
+      "length": 494
+    }
+  },
+  "242": {
+    "content": "statistics . Cambridge university\\npress, 2000.\\n, 2020.\\n[25] M. E. TIPPING et C. M. BISHOP : Probabilistic principal component\\nanalysis.\",   \"261\": \"Journal of the Royal Statistical Society : Series B (Statistical\\nMethodology) , 61(3):611\u2013622, 1999.\\n[26] A. M. TURING : Computing machinery and intelligence. Mind , 59(236):\\n433\u2013460, 1950.\\n[27] A. W. Van der VAART :Asymptotic statistics . Cambridge university\\npress, 2000.\" }",
+    "metadata": {
+      "source": "doc_2",
+      "chunk_id": "chunk_243",
+      "length": 433
+    }
+  }
+}

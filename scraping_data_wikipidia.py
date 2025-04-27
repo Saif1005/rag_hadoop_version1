@@ -39,4 +39,5 @@ def scrape_wikipedia_to_pdf_and_hdfs(
 # Exemple d'utilisation
 if __name__ == "__main__":
     url = "https://fr.wikipedia.org/wiki/Intelligence_artificielle"
+    
     scrape_wikipedia_to_pdf_and_hdfs(url)
